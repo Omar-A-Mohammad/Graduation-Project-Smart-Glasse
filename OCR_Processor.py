@@ -153,7 +153,7 @@ class OCRProcessor:
             print("No annotated image available. Perform OCR first.")
 
 
-    def demo(self, image_filepath: str):
+    def demo(self, image_filepath: str,annotated_img_path: str ="annotated_image.jpg"):
         """
         Perform a sample OCR operation for demonstration purposes.
 
@@ -186,7 +186,7 @@ class OCRProcessor:
             
             # Display and save the annotated image
             self.display_annotated_image()
-            self.save_annotated_image("annotated_image.jpg")
+            self.save_annotated_image(annotated_img_path)
             
         except Exception as e:
             print(f"An error occurred: {e}")
