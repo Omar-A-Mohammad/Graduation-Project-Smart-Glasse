@@ -5,6 +5,9 @@ import keyboard  # For keyboard input simulation
 import pyttsx3  # For text-to-speech
 import logging  # For logging
 
+# Custom Modules
+import OCR_Module
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,  # Set logging level to INFO
@@ -38,13 +41,25 @@ class FeedbackSystem:
 
 class Button:
     """Represents a button and detects presses."""
-    def __init__(self, key, name):
+    def __init__(self, key, name, short_press_min=0.05, short_press_max=1.0, long_press_threshold=1.0):
+        """
+        Initialize a button.
+
+        :param key: The keyboard key associated with the button.
+        :param name: The name of the button (e.g., 'A' or 'B').
+        :param short_press_min: Minimum duration (in seconds) for a press to count as a short press.
+        :param short_press_max: Maximum duration (in seconds) for a press to count as a short press.
+        :param long_press_threshold: Duration (in seconds) for a press to count as a long press.
+        """
         self.key = key
         self.name = name
+        self.short_press_min = short_press_min  # Minimum duration for a short press
+        self.short_press_max = short_press_max  # Maximum duration for a short press
+        self.long_press_threshold = long_press_threshold  # Duration for a long press
         self.press_start_time = 0
         self.press_count = 0
         self.debounce_time = 0.2  # Time to debounce button presses
-        logging.info(f"Button {self.name} initialized with key '{self.key}'.")
+        self.multiple_press_timeout = 0.5  # Timeout between multiple presses
 
     def detect_presses(self, input_queue):
         """Detect button presses and classify them as short, long, or multiple presses."""
@@ -65,11 +80,12 @@ class Button:
             else:  # Simulated button is released
                 if self.press_start_time != 0:
                     press_duration = time.time() - self.press_start_time
-                    if press_duration < 1.0:  # Short press
+                    if self.short_press_min <= press_duration < self.short_press_max:  # Short press
                         self.press_count += 1
                         self.press_start_time = 0
                         logging.info(f"{self.name}: Short press detected (count: {self.press_count}).")
                         time.sleep(self.debounce_time)  # Debounce
+                        
                         # Check for multiple quick presses
                         time.sleep(0.3)  # Wait to see if another press occurs
                         if not keyboard.is_pressed(self.key):
