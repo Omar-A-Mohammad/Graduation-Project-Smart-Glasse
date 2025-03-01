@@ -3,7 +3,6 @@ import time
 import logging
 import winsound
 import pyttsx3
-import queue
 from pynput import keyboard
 
 # Configure logging
@@ -11,35 +10,29 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 class FeedbackManager:
     def __init__(self):
-        self.speech_queue = queue.Queue()
-        self.speech_thread = threading.Thread(target=self._speech_loop, daemon=True)
-        self.speech_thread.start()
+        self.engine = pyttsx3.init()
+        self.lock = threading.Lock()
+        self.latest_text = None
         
     def speak(self, text):
-        while not self.speech_queue.empty():  # Clear old requests
-            try:
-                self.speech_queue.get_nowait()
-            except queue.Empty:
-                break
-        self.speech_queue.put(text)
+        with self.lock:
+            self.latest_text = text
+            threading.Thread(target=self._process_speech, daemon=True).start()
     
-    def _speech_loop(self):
-        while True:
-            try:
-                text = self.speech_queue.get(timeout=1)  # Prevent blocking forever
-                if text:
-                    engine = pyttsx3.init()
-                    engine.say(text)
-                    engine.runAndWait()
-                    engine.stop()
-            except queue.Empty:
-                pass  # Continue looping even if the queue is empty
+    def _process_speech(self):
+        with self.lock:
+            if self.latest_text:
+                self.engine.stop()  # Discard previous requests
+                self.engine.startLoop(False)
+                self.engine.say(self.latest_text)
+                self.engine.endLoop()
+                self.latest_text = None
     
     def haptic_feedback(self, frequency=1000, duration=200):
         winsound.Beep(frequency, duration)
 
 class KeyListener:
-    SHORT_PRESS_THRESHOLD = 0.3  # Seconds
+    SHORT_PRESS_THRESHOLD = 0.1  # Seconds
     LONG_PRESS_THRESHOLD = 1.0   # Seconds
     MULTIPLE_PRESS_WINDOW = 0.5  # Seconds
 
@@ -81,11 +74,9 @@ class KeyListener:
         self.press_sequences[key].append(time.time())
         self.press_sequences[key] = [t for t in self.press_sequences[key] if time.time() - t <= self.MULTIPLE_PRESS_WINDOW]
         
-        press_count = len(self.press_sequences[key])
-        
-        if press_count > 1:
-            logging.info(f"{press_count} presses detected for '{key}'")
-            self.feedback_manager.speak(f"{press_count} presses of {key}")
+        if len(self.press_sequences[key]) > 1:
+            logging.info(f"Multiple presses detected for '{key}'")
+            self.feedback_manager.speak(f"Multiple presses of {key}")
             self.feedback_manager.haptic_feedback(1200, 200)
             self.press_sequences[key] = []  # Reset sequence
         elif duration >= self.LONG_PRESS_THRESHOLD:
