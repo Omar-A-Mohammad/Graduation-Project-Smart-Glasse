@@ -129,11 +129,11 @@ if __name__ == "__main__":
     # Process the results (normalize bounding boxes)
     detections = detector.process_results(normalize=True)
 
-    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "output_visualized.jpg")
+    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
 
     # Save the results to a JSON file
-    detector.save_results(detections, "output_2.json")
+    detector.save_results(detections, "Object_Detection_Module/output_2.json")
 
     # Load and print the results
-    loaded_detections = detector.load_results("output_2.json")
+    loaded_detections = detector.load_results("Object_Detection_Module/output_2.json")
     print(loaded_detections)

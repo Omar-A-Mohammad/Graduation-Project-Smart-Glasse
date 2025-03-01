@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import json
+import cv2
 
 class YOLODetector:
     def __init__(self, model_path):
@@ -80,6 +81,42 @@ class YOLODetector:
         with open(json_path) as f:
             return json.load(f)
 
+    def visualize_detections(self, image_path, detections, output_path):
+        """
+        Visualize detections on the input image and save the result.
+        :param image_path: Path to the input image.
+        :param detections: List of detections.
+        :param output_path: Path to save the visualized image.
+        """
+        # Load the image
+        image = cv2.imread(image_path)
+        image_height, image_width = image.shape[:2]
+
+        for detection in detections:
+            bbox = detection["bbox"]
+            class_name = detection["text"]
+            confidence = detection["confidence"]
+
+            # Denormalize coordinates if normalized
+            x = int(bbox["x"] * image_width) if bbox["x"] <= 1 else int(bbox["x"])
+            y = int(bbox["y"] * image_height) if bbox["y"] <= 1 else int(bbox["y"])
+            width = int(bbox["width"] * image_width) if bbox["width"] <= 1 else int(bbox["width"])
+            height = int(bbox["height"] * image_height) if bbox["height"] <= 1 else int(bbox["height"])
+
+            # Set x and y to top left instead of center
+            x -= int(0.5*width)
+            y -= int(0.5*height)
+
+            # Draw bounding box
+            cv2.rectangle(image, (x, y), (x + width, y + height), (0, 255, 0), 2)
+
+            # Put class name and confidence
+            label = f"{class_name} {confidence:.2f}"
+            cv2.putText(image, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+        # Save the visualized image
+        cv2.imwrite(output_path, image)
+
 
 # Example usage
 if __name__ == "__main__":
@@ -90,11 +127,13 @@ if __name__ == "__main__":
     results = detector.run_inference("Currency_Module/001456598.jpg")
 
     # Process the results (normalize bounding boxes)
-    detections = detector.process_results(normalize=False)
+    detections = detector.process_results(normalize=True)
+
+    detector.visualize_detections("Currency_Module/001456598.jpg", detections, "Currency_Module/output_visualized.jpg")
 
     # Save the results to a JSON file
-    detector.save_results(detections, "output_2.json")
+    detector.save_results(detections, "Currency_Module/output_2.json")
 
     # Load and print the results
-    loaded_detections = detector.load_results("output_2.json")
+    loaded_detections = detector.load_results("Currency_Module/output_2.json")
     print(loaded_detections)
