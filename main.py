@@ -16,7 +16,7 @@ class FeedbackManager:
         self.speech_thread.start()
         
     def speak(self, text):
-        while not self.speech_queue.empty():  # Clear old requests
+        while not self.speech_queue.empty():
             try:
                 self.speech_queue.get_nowait()
             except queue.Empty:
@@ -26,7 +26,7 @@ class FeedbackManager:
     def _speech_loop(self):
         while True:
             try:
-                text = self.speech_queue.get(timeout=1)  # Prevent blocking forever
+                text = self.speech_queue.get(timeout=1)
                 if text:
                     engine = pyttsx3.init()
                     engine.say(text)
@@ -47,13 +47,20 @@ class KeyListener:
         self.feedback_manager = feedback_manager
         self.keys = keys
         self.pressed_times = {}
-        self.press_sequences = {}
+        self.press_sequences = {key: [] for key in keys}  # Store multiple press timestamps
         self.input_lock = threading.Lock()
         self.listener = keyboard.Listener(on_press=self._on_press, on_release=self._on_release)
-        
+        self.running = threading.Event()  # Graceful stop
+        self.running.set()
+
     def start(self):
         self.listener.start()
-    
+
+    def stop(self):
+        logging.info("Stopping KeyListener...")
+        self.running.clear()
+        self.listener.stop()
+
     def _on_press(self, key):
         with self.input_lock:
             try:
@@ -62,8 +69,11 @@ class KeyListener:
                     self.pressed_times[key_char] = time.time()
             except AttributeError:
                 pass
-    
+
     def _on_release(self, key):
+        if not self.running.is_set():
+            return  # Exit if the listener is stopping
+
         with self.input_lock:
             try:
                 key_char = key.char.lower()
@@ -73,21 +83,21 @@ class KeyListener:
                     del self.pressed_times[key_char]
             except AttributeError:
                 pass
-    
+
     def _process_keypress(self, key, duration):
-        if key not in self.press_sequences:
-            self.press_sequences[key] = []
-        
-        self.press_sequences[key].append(time.time())
-        self.press_sequences[key] = [t for t in self.press_sequences[key] if time.time() - t <= self.MULTIPLE_PRESS_WINDOW]
-        
+        current_time = time.time()
+
+        # Remove timestamps that are too old
+        self.press_sequences[key] = [t for t in self.press_sequences[key] if current_time - t <= self.MULTIPLE_PRESS_WINDOW]
+        self.press_sequences[key].append(current_time)
+
         press_count = len(self.press_sequences[key])
-        
+        logging.info(f"Press sequence for '{key}': {self.press_sequences[key]} (Count: {press_count})")
+
         if press_count > 1:
             logging.info(f"{press_count} presses detected for '{key}'")
             self.feedback_manager.speak(f"{press_count} presses of {key}")
             self.feedback_manager.haptic_feedback(1200, 200)
-            self.press_sequences[key] = []  # Reset sequence
         elif duration >= self.LONG_PRESS_THRESHOLD:
             logging.info(f"Long press detected for '{key}'")
             self.feedback_manager.speak(f"Long press of {key}")
@@ -101,12 +111,24 @@ class MainLoop:
     def __init__(self):
         self.feedback_manager = FeedbackManager()
         self.key_listener = KeyListener(self.feedback_manager)
-        
+        self.running = threading.Event()
+        self.running.set()
+
     def run(self):
         logging.info("Starting main loop...")
         self.key_listener.start()
-        while True:
-            time.sleep(1)  # Keep the main thread alive
+
+        try:
+            while self.running.is_set():
+                time.sleep(1)  # Keep the main thread alive
+        except KeyboardInterrupt:
+            logging.info("KeyboardInterrupt detected, shutting down gracefully...")
+            self.stop()
+
+    def stop(self):
+        logging.info("Stopping main loop...")
+        self.running.clear()
+        self.key_listener.stop()
 
 if __name__ == "__main__":
     main_loop = MainLoop()
