@@ -1,18 +1,21 @@
-from Input_Manager.InputManager import *
+import Input_Manager.InputManager as InputManager
 from Object_Detection_Module.Obj_Detection import YOLODetector as ObjectDetector
 from OCR_Module.OCR_Processor import OCRProcessor
 from Currency_Module.curr import YOLODetector as CurrencyDetector
+from Camera_Module.CameraModule import CameraModule
+
+Camera = CameraModule("http://192.168.100.7:8080")
 
 # Set up logging
-level = logging.INFO
-logger = logging.getLogger()
+level = InputManager.logging.INFO
+logger = InputManager.logging.getLogger()
 logger.setLevel(level)
 for handler in logger.handlers:
     handler.setLevel(level)
 
 def main():
     try:
-        input_manager = InputManager()
+        input_manager = InputManager.InputManager()
         keys = list(input_manager.key_detectors.keys())
         key1 = keys[0]
         key2 = keys[1]
@@ -27,25 +30,37 @@ def main():
         
         # Main Menu actions
         def MainMenu_DoublePress(key):
-            HapticFeedback.short_pulse()
+            """
+            Handle double press actions for the main menu.
+            :param key: The key that was pressed.
+            """
+            InputManager.HapticFeedback.short_pulse()
+
             if key == key1:
                 input_manager.speak("Running object detection")
                 detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
-                #detector.run_inference()
+                detector.run_inference(Camera.get_image())
+                detections = detector.process_results(normalize=True)
+                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+
             elif key == key2:
                 input_manager.speak("Running currency detection")
-                detector = CurrencyDetector("Currency_Module/currency_model.pt")
-                #detector.run_inference()
+                detector = CurrencyDetector("Currency_Module/cur_n100_runs/best.pt")
+                detector.run_inference(Camera.get_image())
+                detections = detector.process_results(normalize=True)
+                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+
             else:
                 input_manager.speak(f"Unknown key: {key}")   
             input_manager.speak(f"{key} double press detected, running object detection")
+
         input_manager.set_action_handler('double', MainMenu_DoublePress)
         
 
         input_manager.start()
         
         while True:
-            time.sleep(0.1)
+            InputManager.time.sleep(0.1)
             
     except KeyboardInterrupt:
         logger.info("Shutting down...")

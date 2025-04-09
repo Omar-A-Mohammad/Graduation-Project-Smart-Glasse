@@ -1429,3 +1429,52 @@ Listening for key presses: a and b
 2025-04-09 02:50:04,648 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
 2025-04-09 02:50:04,989 - INFO - Listening for key presses: a and b
 2025-04-09 02:50:05,215 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-10 01:02:25,561 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-10 01:02:25,563 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-10 01:02:26,105 - INFO - Listening for key presses: a and b
+2025-04-10 01:02:26,105 - INFO - Press Ctrl+C to exit.
+2025-04-10 01:02:26,387 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-10 01:02:28,316 - INFO - Detected single press on key A
+2025-04-10 01:02:30,677 - INFO - Detected triple press on key A
+2025-04-10 01:02:32,488 - INFO - Detected double press on key A
+2025-04-10 01:03:08,326 - INFO - Detected double press on key A
+2025-04-10 01:03:28,971 - INFO - Detected double press on key A
+2025-04-10 01:03:36,932 - INFO - Detected double press on key A
+2025-04-10 01:03:41,607 - INFO - Detected double press on key B
+2025-04-10 01:04:13,739 - INFO - Shutting down...
+2025-04-10 01:04:13,758 - INFO - Input manager stopped.
+2025-04-10 01:06:35,642 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-10 01:06:35,643 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-10 01:06:35,974 - INFO - Listening for key presses: a and b
+2025-04-10 01:06:35,974 - INFO - Press Ctrl+C to exit.
+2025-04-10 01:06:36,205 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-10 01:06:37,886 - INFO - Detected single press on key A
+2025-04-10 01:06:38,864 - INFO - Detected single press on key A
+2025-04-10 01:06:40,583 - INFO - Detected double press on key A
+2025-04-10 01:06:52,977 - INFO - Detected double press on key A
+2025-04-10 01:06:55,848 - INFO - Detected double press on key B
+2025-04-10 01:07:02,915 - INFO - Shutting down...
+2025-04-10 01:07:02,934 - INFO - Input manager stopped.
+2025-04-10 01:11:39,409 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-10 01:11:39,409 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-10 01:11:39,737 - INFO - Listening for key presses: a and b
+2025-04-10 01:11:39,737 - INFO - Press Ctrl+C to exit.
+2025-04-10 01:11:39,973 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-10 01:11:41,395 - INFO - Detected single press on key A
+2025-04-10 01:11:42,893 - INFO - Detected double press on key A
+2025-04-10 01:12:00,286 - INFO - Detected single press on key B
+2025-04-10 01:12:02,038 - INFO - Detected double press on key B
+2025-04-10 01:12:19,202 - INFO - Detected double press on key A
+2025-04-10 01:12:22,699 - INFO - Detected double press on key A
+2025-04-10 01:12:26,157 - INFO - Detected double press on key B
+2025-04-10 01:12:28,742 - INFO - Detected double press on key B
+2025-04-10 01:12:31,357 - INFO - Detected double press on key B
+2025-04-10 01:12:35,192 - INFO - Detected double press on key A
+2025-04-10 01:16:05,519 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-10 01:16:05,520 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-10 01:16:05,851 - INFO - Listening for key presses: a and b
+2025-04-10 01:16:05,851 - INFO - Press Ctrl+C to exit.
+2025-04-10 01:16:06,077 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-10 01:16:07,456 - INFO - Detected single press on key A
+2025-04-10 01:16:09,585 - INFO - Detected double press on key A
+2025-04-10 01:16:09,585 - INFO - Detected double press on key A
