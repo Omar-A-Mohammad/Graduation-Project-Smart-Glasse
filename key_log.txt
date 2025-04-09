@@ -1,4 +1,0 @@
-2025-04-07 05:08:00,099 - The key 'a' was pressed
-2025-04-07 05:08:00,202 - The key 'a' was pressed for 0.1 seconds
-2025-04-07 05:08:05,762 - The key 'a' was pressed
-2025-04-07 05:08:07,300 - The key 'a' was pressed for 1.54 seconds

@@ -1023,3 +1023,409 @@
 2025-04-09 00:43:25,193 - DEBUG - Key a pressed at 1744152205.1923447
 2025-04-09 00:43:25,296 - DEBUG - Key a released at 1744152205.29575, duration 0.103s, count 8
 2025-04-09 00:43:25,600 - DEBUG - Ignored 8 taps on key a
+2025-04-09 00:44:56,661 - DEBUG - CoInitializeEx(None, 2)
+2025-04-09 00:44:56,762 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 00:44:56,763 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 00:44:56,859 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-04-09 00:44:56,859 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-04-09 00:44:56,931 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x227266faae0 at 22726f8cf50>)
+2025-04-09 00:44:56,931 - DEBUG - Does implement IProvideClassInfo
+2025-04-09 00:44:56,933 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-04-09 00:44:56,933 - DEBUG - Release <POINTER(IUnknown) ptr=0x227266fab20 at 22729a1add0>
+2025-04-09 00:44:56,933 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 00:44:56,934 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-04-09 00:44:56,934 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x227266fab20 at 22729a1ad50>
+2025-04-09 00:44:56,934 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x227266fab40 at 22729a1aa50>
+2025-04-09 00:44:56,935 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x22728b35e78 at 22729a1a050>
+2025-04-09 00:44:56,935 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x22728b35ed0 at 22729a1abd0>
+2025-04-09 00:44:56,935 - DEBUG - Release <POINTER(ITypeLib) ptr=0x22728a91fa0 at 22729a1add0>
+2025-04-09 00:44:56,935 - DEBUG - Release <POINTER(IUnknown) ptr=0x227266faae0 at 22726f8cf50>
+2025-04-09 00:44:56,936 - DEBUG - <POINTER(ISpeechVoice) ptr=0x227266fab20 at 22729a1ad50> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 00:44:56,936 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x227266fab40 at 22726f8cf50>
+2025-04-09 00:44:56,937 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-04-09 00:44:56,938 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-04-09 00:44:56,938 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>: _ISpeechVoiceEvents.Sentence not implemented
+2025-04-09 00:44:56,938 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-04-09 00:44:56,938 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>: _ISpeechVoiceEvents.Viseme not implemented
+2025-04-09 00:44:56,939 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-04-09 00:44:56,939 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-04-09 00:44:56,939 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 00:44:56,939 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-04-09 00:44:56,940 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>
+2025-04-09 00:44:56,940 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000022728EC9FD0>.AddRef() -> 1
+2025-04-09 00:44:56,947 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x227266fab48 at 22726f55350>
+2025-04-09 00:44:57,000 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x227266fb620 at 22726f55350>)
+2025-04-09 00:44:57,000 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x227266fb620 at 22726f55350>
+2025-04-09 00:44:57,001 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x2272aa51550 at 22726f55350>)
+2025-04-09 00:44:57,002 - DEBUG - Release <POINTER(IUnknown) ptr=0x2272aa38480 at 22728f844d0>
+2025-04-09 00:44:57,002 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x2272aa44bc0 at 22728f2bf50>)
+2025-04-09 00:44:57,002 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x2272aa44bc0 at 22728f2bf50>)
+2025-04-09 00:44:57,003 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-04-09 00:44:57,003 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-04-09 00:44:57,004 - DEBUG - Release <POINTER(IUnknown) ptr=0x22728b35f80 at 22729a6c1d0>
+2025-04-09 00:44:57,004 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-04-09 00:44:57,005 - DEBUG - Release <POINTER(IUnknown) ptr=0x2272aa44bc0 at 22729a6c2d0>
+2025-04-09 00:44:57,005 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 00:44:57,005 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-04-09 00:44:57,005 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x2272aa44bc0 at 22729a6c1d0>
+2025-04-09 00:44:57,006 - DEBUG - Release <POINTER(IDispatch) ptr=0x2272aa44bc0 at 22729a6c150>
+2025-04-09 00:44:57,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x22728b35f80 at 22729a6c250>
+2025-04-09 00:44:57,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x22728a91fa0 at 22729a6c2d0>
+2025-04-09 00:44:57,007 - DEBUG - Release <POINTER(IDispatch) ptr=0x2272aa44bc0 at 22728f2bf50>
+2025-04-09 00:44:57,007 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x2272aa38480 at 22728f84450>
+2025-04-09 00:44:57,007 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x2272aa51550 at 22726f55350>
+2025-04-09 00:44:57,007 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x2272aa44bc0 at 22729a6c1d0>
+2025-04-09 00:44:57,150 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 00:44:57,812 - DEBUG - Key a pressed at 1744152297.812084
+2025-04-09 00:44:57,915 - DEBUG - Key a released at 1744152297.9147525, duration 0.103s, count 1
+2025-04-09 00:44:58,172 - DEBUG - Key a pressed at 1744152298.1714332
+2025-04-09 00:44:58,292 - DEBUG - Key a released at 1744152298.2919428, duration 0.121s, count 2
+2025-04-09 00:44:58,595 - DEBUG - Key a pressed at 1744152298.5941253
+2025-04-09 00:44:58,716 - DEBUG - Key a released at 1744152298.715323, duration 0.121s, count 3
+2025-04-09 00:44:58,948 - DEBUG - Key a pressed at 1744152298.9480057
+2025-04-09 00:44:59,087 - DEBUG - Key a released at 1744152299.0868807, duration 0.139s, count 4
+2025-04-09 00:44:59,342 - DEBUG - Key a pressed at 1744152299.341547
+2025-04-09 00:44:59,462 - DEBUG - Key a released at 1744152299.461499, duration 0.120s, count 5
+2025-04-09 00:44:59,977 - DEBUG - Ignored 5 taps on key a
+2025-04-09 00:45:00,629 - DEBUG - Key a pressed at 1744152300.6286669
+2025-04-09 00:45:00,709 - DEBUG - Key a released at 1744152300.7083247, duration 0.080s, count 1
+2025-04-09 00:45:01,010 - DEBUG - Key a pressed at 1744152301.009308
+2025-04-09 00:45:01,132 - DEBUG - Key a released at 1744152301.131754, duration 0.122s, count 2
+2025-04-09 00:45:01,329 - DEBUG - Key a pressed at 1744152301.3289106
+2025-04-09 00:45:01,834 - INFO - Detected hold press on key A
+2025-04-09 00:45:02,149 - DEBUG - Key a hold triggered at 1744152302.1495378
+2025-04-09 00:45:04,993 - DEBUG - Key a pressed at 1744152304.9935153
+2025-04-09 00:45:05,509 - INFO - Detected hold press on key A
+2025-04-09 00:45:05,823 - DEBUG - Key a hold triggered at 1744152305.8234396
+2025-04-09 00:45:06,949 - DEBUG - Key a pressed at 1744152306.9487035
+2025-04-09 00:45:07,033 - DEBUG - Key a released at 1744152307.0329916, duration 0.084s, count 1
+2025-04-09 00:45:07,123 - DEBUG - Key a pressed at 1744152307.1224577
+2025-04-09 00:45:07,213 - DEBUG - Key a released at 1744152307.2129128, duration 0.090s, count 2
+2025-04-09 00:45:07,315 - DEBUG - Key a pressed at 1744152307.3148603
+2025-04-09 00:45:07,387 - DEBUG - Key a released at 1744152307.387102, duration 0.072s, count 3
+2025-04-09 00:45:07,469 - DEBUG - Key a pressed at 1744152307.469109
+2025-04-09 00:45:07,565 - DEBUG - Key a released at 1744152307.564381, duration 0.095s, count 4
+2025-04-09 00:45:07,651 - DEBUG - Key a pressed at 1744152307.6507785
+2025-04-09 00:45:07,728 - DEBUG - Key a released at 1744152307.7275982, duration 0.077s, count 5
+2025-04-09 00:45:07,829 - DEBUG - Key a pressed at 1744152307.828722
+2025-04-09 00:45:07,917 - DEBUG - Key a released at 1744152307.916839, duration 0.088s, count 6
+2025-04-09 00:45:08,428 - DEBUG - Ignored 6 taps on key a
+2025-04-09 00:45:09,396 - DEBUG - Key b pressed at 1744152309.396143
+2025-04-09 00:45:09,501 - DEBUG - Key b released at 1744152309.5012712, duration 0.105s, count 1
+2025-04-09 00:45:09,661 - DEBUG - Key b pressed at 1744152309.6606688
+2025-04-09 00:45:09,761 - DEBUG - Key b released at 1744152309.7606106, duration 0.100s, count 2
+2025-04-09 00:45:09,910 - DEBUG - Key b pressed at 1744152309.90953
+2025-04-09 00:45:09,994 - DEBUG - Key b released at 1744152309.9941223, duration 0.085s, count 3
+2025-04-09 00:45:10,502 - INFO - Detected triple press on key B
+2025-04-09 00:45:11,188 - DEBUG - Key b pressed at 1744152311.1882436
+2025-04-09 00:45:11,291 - DEBUG - Key b released at 1744152311.291115, duration 0.103s, count 1
+2025-04-09 00:45:11,552 - DEBUG - Key b pressed at 1744152311.5523734
+2025-04-09 00:45:11,662 - DEBUG - Key b released at 1744152311.662327, duration 0.110s, count 2
+2025-04-09 00:45:11,892 - DEBUG - Key b pressed at 1744152311.8921275
+2025-04-09 00:45:12,006 - DEBUG - Key b released at 1744152312.0052502, duration 0.113s, count 3
+2025-04-09 00:45:12,512 - INFO - Detected triple press on key B
+2025-04-09 00:45:13,008 - DEBUG - Key a pressed at 1744152313.0079703
+2025-04-09 00:45:13,096 - DEBUG - Key a released at 1744152313.0953238, duration 0.087s, count 1
+2025-04-09 00:45:13,346 - DEBUG - Key a pressed at 1744152313.3458416
+2025-04-09 00:45:13,449 - DEBUG - Key a released at 1744152313.4489563, duration 0.103s, count 2
+2025-04-09 00:45:13,660 - DEBUG - Key a pressed at 1744152313.659072
+2025-04-09 00:45:13,773 - DEBUG - Key a released at 1744152313.7727854, duration 0.114s, count 3
+2025-04-09 00:45:14,273 - INFO - Detected triple press on key A
+2025-04-09 00:45:14,892 - DEBUG - Key b pressed at 1744152314.8914807
+2025-04-09 00:45:14,989 - DEBUG - Key b released at 1744152314.9885235, duration 0.097s, count 1
+2025-04-09 00:45:15,189 - DEBUG - Key b pressed at 1744152315.1887183
+2025-04-09 00:45:15,274 - DEBUG - Key b released at 1744152315.2734263, duration 0.085s, count 2
+2025-04-09 00:45:15,404 - DEBUG - Key b pressed at 1744152315.404486
+2025-04-09 00:45:15,513 - DEBUG - Key b released at 1744152315.5133896, duration 0.109s, count 3
+2025-04-09 00:45:16,023 - INFO - Detected triple press on key B
+2025-04-09 00:45:16,471 - DEBUG - Key a pressed at 1744152316.470762
+2025-04-09 00:45:16,542 - DEBUG - Key a released at 1744152316.5422332, duration 0.071s, count 1
+2025-04-09 00:45:16,628 - DEBUG - Key a pressed at 1744152316.6277916
+2025-04-09 00:45:16,721 - DEBUG - Key a released at 1744152316.7207155, duration 0.093s, count 2
+2025-04-09 00:45:17,228 - INFO - Detected double press on key A
+2025-04-09 00:45:17,908 - DEBUG - Key b pressed at 1744152317.907303
+2025-04-09 00:45:17,994 - DEBUG - Key b released at 1744152317.9933352, duration 0.086s, count 1
+2025-04-09 00:45:18,082 - DEBUG - Key b pressed at 1744152318.0817058
+2025-04-09 00:45:18,177 - DEBUG - Key b released at 1744152318.1773865, duration 0.096s, count 2
+2025-04-09 00:45:18,678 - INFO - Detected double press on key B
+2025-04-09 00:45:18,789 - DEBUG - Key a pressed at 1744152318.7883532
+2025-04-09 00:45:19,303 - INFO - Detected hold press on key A
+2025-04-09 00:45:19,616 - DEBUG - Key a hold triggered at 1744152319.616464
+2025-04-09 01:29:34,807 - DEBUG - CoInitializeEx(None, 2)
+2025-04-09 01:29:35,109 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 01:29:35,109 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 01:29:35,380 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-04-09 01:29:35,381 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-04-09 01:29:35,500 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x1716c62aae0 at 1716c944d50>)
+2025-04-09 01:29:35,501 - DEBUG - Does implement IProvideClassInfo
+2025-04-09 01:29:35,503 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-04-09 01:29:35,504 - DEBUG - Release <POINTER(IUnknown) ptr=0x1716c62ab20 at 1716f0eadd0>
+2025-04-09 01:29:35,504 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 01:29:35,505 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-04-09 01:29:35,505 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x1716c62ab20 at 1716f0ead50>
+2025-04-09 01:29:35,506 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x1716c62ab40 at 1716f0eaa50>
+2025-04-09 01:29:35,506 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1716ea81868 at 1716f0ea050>
+2025-04-09 01:29:35,507 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1716ea818c0 at 1716f0eabd0>
+2025-04-09 01:29:35,507 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1716eab69b0 at 1716f0eadd0>
+2025-04-09 01:29:35,507 - DEBUG - Release <POINTER(IUnknown) ptr=0x1716c62aae0 at 1716c944d50>
+2025-04-09 01:29:35,508 - DEBUG - <POINTER(ISpeechVoice) ptr=0x1716c62ab20 at 1716f0ead50> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 01:29:35,509 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x1716c62ab40 at 1716c944d50>
+2025-04-09 01:29:35,510 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-04-09 01:29:35,511 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-04-09 01:29:35,511 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>: _ISpeechVoiceEvents.Sentence not implemented
+2025-04-09 01:29:35,512 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-04-09 01:29:35,512 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>: _ISpeechVoiceEvents.Viseme not implemented
+2025-04-09 01:29:35,513 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-04-09 01:29:35,513 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-04-09 01:29:35,514 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 01:29:35,514 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-04-09 01:29:35,514 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>
+2025-04-09 01:29:35,515 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001716ED91FD0>.AddRef() -> 1
+2025-04-09 01:29:35,525 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x1716c62ab48 at 1716c8b8ed0>
+2025-04-09 01:29:35,606 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x1716c62b620 at 1716c8b8ed0>)
+2025-04-09 01:29:35,606 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x1716c62b620 at 1716c8b8ed0>
+2025-04-09 01:29:35,608 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x17170851cd0 at 1716c8b8ed0>)
+2025-04-09 01:29:35,608 - DEBUG - Release <POINTER(IUnknown) ptr=0x17170838540 at 1716ee4c350>
+2025-04-09 01:29:35,609 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x17170844350 at 1716edf3dd0>)
+2025-04-09 01:29:35,609 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x17170844350 at 1716edf3dd0>)
+2025-04-09 01:29:35,610 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-04-09 01:29:35,611 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-04-09 01:29:35,612 - DEBUG - Release <POINTER(IUnknown) ptr=0x1716ea81970 at 1716f9381d0>
+2025-04-09 01:29:35,613 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-04-09 01:29:35,613 - DEBUG - Release <POINTER(IUnknown) ptr=0x17170844350 at 1716f9382d0>
+2025-04-09 01:29:35,613 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 01:29:35,614 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-04-09 01:29:35,614 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x17170844350 at 1716f9381d0>
+2025-04-09 01:29:35,614 - DEBUG - Release <POINTER(IDispatch) ptr=0x17170844350 at 1716f938150>
+2025-04-09 01:29:35,615 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1716ea81970 at 1716f938250>
+2025-04-09 01:29:35,615 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1716eab69b0 at 1716f9382d0>
+2025-04-09 01:29:35,615 - DEBUG - Release <POINTER(IDispatch) ptr=0x17170844350 at 1716edf3dd0>
+2025-04-09 01:29:35,616 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x17170838540 at 1716edf3cd0>
+2025-04-09 01:29:35,616 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x17170851cd0 at 1716c8b8ed0>
+2025-04-09 01:29:35,617 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x17170844350 at 1716f9381d0>
+2025-04-09 01:29:35,840 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 01:29:36,518 - DEBUG - Key a pressed at 1744154976.5180345
+2025-04-09 01:29:36,601 - DEBUG - Key a released at 1744154976.6008728, duration 0.083s, count 1
+2025-04-09 01:29:37,115 - INFO - Detected single press on key A
+2025-04-09 01:29:37,700 - DEBUG - Key a pressed at 1744154977.6998158
+2025-04-09 01:29:37,766 - DEBUG - Key a released at 1744154977.7659452, duration 0.066s, count 1
+2025-04-09 01:29:37,829 - DEBUG - Key a pressed at 1744154977.8289237
+2025-04-09 01:29:37,936 - DEBUG - Key a released at 1744154977.9354837, duration 0.107s, count 2
+2025-04-09 01:29:38,442 - INFO - Detected double press on key A
+2025-04-09 01:29:38,931 - DEBUG - Key a pressed at 1744154978.9309697
+2025-04-09 01:29:39,014 - DEBUG - Key a released at 1744154979.013753, duration 0.083s, count 1
+2025-04-09 01:29:39,113 - DEBUG - Key a pressed at 1744154979.1132128
+2025-04-09 01:29:39,198 - DEBUG - Key a released at 1744154979.1976163, duration 0.084s, count 2
+2025-04-09 01:29:39,313 - DEBUG - Key a pressed at 1744154979.3134334
+2025-04-09 01:29:39,385 - DEBUG - Key a released at 1744154979.3853052, duration 0.072s, count 3
+2025-04-09 01:29:39,488 - DEBUG - Key a pressed at 1744154979.4874818
+2025-04-09 01:29:39,562 - DEBUG - Key a released at 1744154979.5624478, duration 0.075s, count 4
+2025-04-09 01:29:39,638 - DEBUG - Key a pressed at 1744154979.63786
+2025-04-09 01:29:39,743 - DEBUG - Key a released at 1744154979.7428057, duration 0.105s, count 5
+2025-04-09 01:29:40,252 - DEBUG - Ignored 5 taps on key a
+2025-04-09 01:29:40,713 - DEBUG - Key b pressed at 1744154980.7135198
+2025-04-09 01:29:40,782 - DEBUG - Key b released at 1744154980.7818716, duration 0.068s, count 1
+2025-04-09 01:29:40,862 - DEBUG - Key b pressed at 1744154980.8616245
+2025-04-09 01:29:40,928 - DEBUG - Key b released at 1744154980.9282467, duration 0.067s, count 2
+2025-04-09 01:29:41,029 - DEBUG - Key b pressed at 1744154981.0290987
+2025-04-09 01:29:41,076 - DEBUG - Key b released at 1744154981.0754728, duration 0.046s, count 3
+2025-04-09 01:29:41,171 - DEBUG - Key b pressed at 1744154981.1705415
+2025-04-09 01:29:41,210 - DEBUG - Key b released at 1744154981.2099752, duration 0.039s, count 4
+2025-04-09 01:29:41,302 - DEBUG - Key b pressed at 1744154981.3015172
+2025-04-09 01:29:41,373 - DEBUG - Key b released at 1744154981.3734481, duration 0.072s, count 5
+2025-04-09 01:29:41,883 - DEBUG - Ignored 5 taps on key b
+2025-04-09 01:29:42,141 - DEBUG - Key b pressed at 1744154982.1408937
+2025-04-09 01:29:42,653 - INFO - Detected hold press on key B
+2025-04-09 01:29:42,967 - DEBUG - Key b hold triggered at 1744154982.9675076
+2025-04-09 01:29:43,257 - DEBUG - Key a pressed at 1744154983.2566826
+2025-04-09 01:29:43,768 - INFO - Detected hold press on key A
+2025-04-09 01:29:44,081 - DEBUG - Key a hold triggered at 1744154984.081754
+2025-04-09 01:30:01,419 - DEBUG - CoInitializeEx(None, 2)
+2025-04-09 01:30:01,570 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 01:30:01,570 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 01:30:01,714 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-04-09 01:30:01,715 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-04-09 01:30:01,836 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x20323aaaae0 at 20323cb8150>)
+2025-04-09 01:30:01,837 - DEBUG - Does implement IProvideClassInfo
+2025-04-09 01:30:01,840 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-04-09 01:30:01,840 - DEBUG - Release <POINTER(IUnknown) ptr=0x20323aaab20 at 203264cadd0>
+2025-04-09 01:30:01,840 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 01:30:01,841 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-04-09 01:30:01,841 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x20323aaab20 at 203264cad50>
+2025-04-09 01:30:01,842 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x20323aaab40 at 203264caa50>
+2025-04-09 01:30:01,842 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20325f5d628 at 203264ca050>
+2025-04-09 01:30:01,843 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20325f5d680 at 203264cabd0>
+2025-04-09 01:30:01,843 - DEBUG - Release <POINTER(ITypeLib) ptr=0x20325effb50 at 203264cadd0>
+2025-04-09 01:30:01,844 - DEBUG - Release <POINTER(IUnknown) ptr=0x20323aaaae0 at 20323cb8150>
+2025-04-09 01:30:01,845 - DEBUG - <POINTER(ISpeechVoice) ptr=0x20323aaab20 at 203264cad50> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 01:30:01,845 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x20323aaab40 at 20323cb8150>
+2025-04-09 01:30:01,848 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-04-09 01:30:01,849 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-04-09 01:30:01,849 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>: _ISpeechVoiceEvents.Sentence not implemented
+2025-04-09 01:30:01,850 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-04-09 01:30:01,850 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>: _ISpeechVoiceEvents.Viseme not implemented
+2025-04-09 01:30:01,851 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-04-09 01:30:01,851 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-04-09 01:30:01,852 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 01:30:01,852 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-04-09 01:30:01,853 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>
+2025-04-09 01:30:01,853 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020326171FD0>.AddRef() -> 1
+2025-04-09 01:30:01,871 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x20323aaab48 at 20323c38ed0>
+2025-04-09 01:30:01,954 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x20323aab620 at 20323c38ed0>)
+2025-04-09 01:30:01,954 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x20323aab620 at 20323c38ed0>
+2025-04-09 01:30:01,956 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x20327c614d0 at 20323c38ed0>)
+2025-04-09 01:30:01,956 - DEBUG - Release <POINTER(IUnknown) ptr=0x20327c48e40 at 2032622c4d0>
+2025-04-09 01:30:01,957 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x20327c534b0 at 203261cff50>)
+2025-04-09 01:30:01,957 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x20327c534b0 at 203261cff50>)
+2025-04-09 01:30:01,958 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-04-09 01:30:01,959 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-04-09 01:30:01,960 - DEBUG - Release <POINTER(IUnknown) ptr=0x20325f5d730 at 203265181d0>
+2025-04-09 01:30:01,961 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-04-09 01:30:01,961 - DEBUG - Release <POINTER(IUnknown) ptr=0x20327c534b0 at 203265182d0>
+2025-04-09 01:30:01,961 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 01:30:01,962 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-04-09 01:30:01,962 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x20327c534b0 at 203265181d0>
+2025-04-09 01:30:01,962 - DEBUG - Release <POINTER(IDispatch) ptr=0x20327c534b0 at 20326518150>
+2025-04-09 01:30:01,963 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20325f5d730 at 20326518250>
+2025-04-09 01:30:01,963 - DEBUG - Release <POINTER(ITypeLib) ptr=0x20325effb50 at 203265182d0>
+2025-04-09 01:30:01,963 - DEBUG - Release <POINTER(IDispatch) ptr=0x20327c534b0 at 203261cff50>
+2025-04-09 01:30:01,963 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x20327c48e40 at 2032622c450>
+2025-04-09 01:30:01,964 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x20327c614d0 at 20323c38ed0>
+2025-04-09 01:30:01,964 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x20327c534b0 at 203265181d0>
+2025-04-09 01:30:02,197 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 01:31:33,933 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 01:31:33,934 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 01:31:34,351 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 01:34:51,281 - DEBUG - CoInitializeEx(None, 2)
+2025-04-09 01:34:51,378 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 01:34:51,378 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 01:34:51,468 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-04-09 01:34:51,469 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-04-09 01:34:51,548 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x18bd9a4aae0 at 18bd9c58150>)
+2025-04-09 01:34:51,548 - DEBUG - Does implement IProvideClassInfo
+2025-04-09 01:34:51,550 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-04-09 01:34:51,550 - DEBUG - Release <POINTER(IUnknown) ptr=0x18bd9a4ab20 at 18bdc46acd0>
+2025-04-09 01:34:51,550 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 01:34:51,551 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-04-09 01:34:51,551 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x18bd9a4ab20 at 18bdc46ac50>
+2025-04-09 01:34:51,551 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x18bd9a4ab40 at 18bdc46a950>
+2025-04-09 01:34:51,552 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x18bdc590088 at 18bdc469f50>
+2025-04-09 01:34:51,552 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x18bdc5900e0 at 18bdc46aad0>
+2025-04-09 01:34:51,552 - DEBUG - Release <POINTER(ITypeLib) ptr=0x18bdbe8e880 at 18bdc46acd0>
+2025-04-09 01:34:51,552 - DEBUG - Release <POINTER(IUnknown) ptr=0x18bd9a4aae0 at 18bd9c58150>
+2025-04-09 01:34:51,553 - DEBUG - <POINTER(ISpeechVoice) ptr=0x18bd9a4ab20 at 18bdc46ac50> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 01:34:51,553 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x18bd9a4ab40 at 18bd9c58150>
+2025-04-09 01:34:51,554 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-04-09 01:34:51,554 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-04-09 01:34:51,555 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>: _ISpeechVoiceEvents.Sentence not implemented
+2025-04-09 01:34:51,555 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-04-09 01:34:51,555 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>: _ISpeechVoiceEvents.Viseme not implemented
+2025-04-09 01:34:51,555 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-04-09 01:34:51,556 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-04-09 01:34:51,556 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-04-09 01:34:51,556 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-04-09 01:34:51,556 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>
+2025-04-09 01:34:51,557 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018BDC111FD0>.AddRef() -> 1
+2025-04-09 01:34:51,563 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x18bd9a4ab48 at 18bd9bd8ed0>
+2025-04-09 01:34:51,623 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x18bd9a4b620 at 18bd9bd8ed0>)
+2025-04-09 01:34:51,624 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x18bd9a4b620 at 18bd9bd8ed0>
+2025-04-09 01:34:51,625 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x18bddba1750 at 18bd9bd8ed0>)
+2025-04-09 01:34:51,625 - DEBUG - Release <POINTER(IUnknown) ptr=0x18bddb88b40 at 18bdc1cc3d0>
+2025-04-09 01:34:51,625 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x18bddb93ae0 at 18bdc16fe50>)
+2025-04-09 01:34:51,625 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x18bddb93ae0 at 18bdc16fe50>)
+2025-04-09 01:34:51,626 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-04-09 01:34:51,626 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-04-09 01:34:51,627 - DEBUG - Release <POINTER(IUnknown) ptr=0x18bdc590190 at 18bdc4bc0d0>
+2025-04-09 01:34:51,627 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-04-09 01:34:51,628 - DEBUG - Release <POINTER(IUnknown) ptr=0x18bddb93ae0 at 18bdc4bc1d0>
+2025-04-09 01:34:51,628 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-04-09 01:34:51,628 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-04-09 01:34:51,629 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x18bddb93ae0 at 18bdc4bc0d0>
+2025-04-09 01:34:51,629 - DEBUG - Release <POINTER(IDispatch) ptr=0x18bddb93ae0 at 18bdc4bc050>
+2025-04-09 01:34:51,629 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x18bdc590190 at 18bdc4bc150>
+2025-04-09 01:34:51,629 - DEBUG - Release <POINTER(ITypeLib) ptr=0x18bdbe8e880 at 18bdc4bc1d0>
+2025-04-09 01:34:51,630 - DEBUG - Release <POINTER(IDispatch) ptr=0x18bddb93ae0 at 18bdc16fe50>
+2025-04-09 01:34:51,630 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x18bddb88b40 at 18bdc16fd50>
+2025-04-09 01:34:51,630 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x18bddba1750 at 18bd9bd8ed0>
+2025-04-09 01:34:51,630 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x18bddb93ae0 at 18bdc4bc0d0>
+2025-04-09 01:34:51,804 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 01:35:02,935 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 01:35:02,935 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 01:35:03,324 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 01:35:05,397 - INFO - Detected double press on key A
+2025-04-09 01:35:06,937 - INFO - Detected triple press on key A
+2025-04-09 01:35:09,752 - INFO - Detected triple press on key B
+2025-04-09 01:35:10,601 - INFO - Detected hold press on key B
+2025-04-09 01:43:41,874 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 01:43:41,875 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 01:43:42,468 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 01:43:43,926 - INFO - Detected double press on key A
+2025-04-09 01:43:45,565 - INFO - Detected double press on key A
+2025-04-09 01:43:46,615 - INFO - Detected double press on key A
+2025-04-09 01:43:47,668 - INFO - Detected double press on key A
+2025-04-09 01:43:48,743 - INFO - Detected double press on key A
+2025-04-09 01:43:49,720 - INFO - Detected single press on key A
+2025-04-09 01:43:50,789 - INFO - Detected double press on key A
+2025-04-09 01:43:51,764 - INFO - Detected single press on key A
+2025-04-09 01:43:52,788 - INFO - Detected double press on key A
+2025-04-09 01:43:53,825 - INFO - Detected double press on key A
+2025-04-09 01:43:54,879 - INFO - Detected double press on key A
+2025-04-09 01:43:56,440 - INFO - Shutting down...
+2025-04-09 01:43:56,461 - INFO - Input manager stopped.
+2025-04-09 01:58:21,918 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 01:58:21,919 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 01:58:22,303 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 01:58:24,323 - INFO - Shutting down...
+2025-04-09 01:58:24,403 - INFO - Input manager stopped.
+2025-04-09 02:00:46,736 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:00:46,736 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:00:47,090 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:01:02,876 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:01:02,877 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:01:21,269 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:01:21,270 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:01:21,607 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:02:23,925 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:02:23,925 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:02:24,272 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:02:39,488 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:02:39,489 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:02:39,902 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:03:05,294 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:03:05,295 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:03:05,676 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:03:23,873 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:03:23,873 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:03:24,264 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:03:41,884 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:03:41,884 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:03:42,233 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:05:25,375 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:05:25,376 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:05:25,750 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:09:02,615 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:09:02,616 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:09:03,134 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:10:02,748 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:10:02,748 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:10:03,016 - INFO - Listening for key presses: a and b
+2025-04-09 02:10:03,245 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:15:06,879 - INFO - Detected single press on key B
+2025-04-09 02:16:00,997 - INFO - Detected single press on key A
+2025-04-09 02:48:23,895 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:48:23,896 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:48:24,132 - INFO - Listening for key presses: a and b
+2025-04-09 02:48:24,260 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:49:06,822 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:49:06,822 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:49:07,038 - INFO - Listening for key presses: a and b
+2025-04-09 02:49:07,224 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:49:30,919 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:49:30,920 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:49:31,387 - INFO - 
+Listening for key presses: a and b
+2025-04-09 02:49:31,618 - INFO - Input manager started. Listening for key presses on A and B.
+2025-04-09 02:50:04,647 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\youssef\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-09 02:50:04,648 - INFO - Using writeable comtypes cache directory: 'C:\Users\youssef\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-04-09 02:50:04,989 - INFO - Listening for key presses: a and b
+2025-04-09 02:50:05,215 - INFO - Input manager started. Listening for key presses on A and B.
