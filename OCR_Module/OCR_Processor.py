@@ -5,9 +5,9 @@ import os
 import time
 
 class OCRProcessor:
-    def __init__(self, tesseract_path:str="tesseract"):
+    def __init__(self, tesseract_path:str="C:/Program Files/Tesseract-OCR/Tesseract.exe"):
         """
-        Initialize the OCRProcessor with an optional path to Tesseract OCR executable.
+        Initialize the OCRProcessor with the path to the Tesseract OCR executable.
         """
         if tesseract_path:
             if os.path.exists(tesseract_path):

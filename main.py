@@ -29,12 +29,22 @@ def main():
         # input_manager.set_action_handler('single', custom_single_handler)
         
         # Main Menu actions
+
+        def MainMenu_SinglePress(key):
+            """
+            Handle single press actions for the main menu.
+            :param key: The key that was pressed.
+            """
+            InputManager.HapticFeedback.short_pulse()
+            input_manager.speak("Single press detected")
+
+
         def MainMenu_DoublePress(key):
             """
             Handle double press actions for the main menu.
             :param key: The key that was pressed.
             """
-            InputManager.HapticFeedback.short_pulse()
+            InputManager.HapticFeedback.double_pulse()
 
             if key == key1:
                 input_manager.speak("Running object detection")
@@ -50,12 +60,59 @@ def main():
                 detections = detector.process_results(normalize=True)
                 detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
 
-            else:
-                input_manager.speak(f"Unknown key: {key}")   
-            input_manager.speak(f"{key} double press detected, running object detection")
 
-        input_manager.set_action_handler('double', MainMenu_DoublePress)
+        def MainMenu_TriplePress(key):
+            """
+            Handle triple press actions for the main menu.
+            :param key: The key that was pressed.
+            """
+            InputManager.HapticFeedback.triple_pulse()
+
+
+            if key == key1:
+                input_manager.speak("Running object detection")
+                detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
+                detector.run_inference(Camera.get_image())
+                detections = detector.process_results(normalize=True)
+                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+            
+            elif key == key2:
+                input_manager.speak("Running OCR")
+                ocr_processor = OCRProcessor()
+                ocr_processor.ocr_on_image(Camera.get_image())
+                ocr_processor.display_annotated_image("Object_Detection_Module/cars_on_road.jpeg")
+
+
+        def MainMenu_Hold(key):
+            """
+            Handle hold actions for the main menu.
+            :param key: The key that was pressed.
+            """
+
+            InputManager.HapticFeedback.long_pulse()
+            if key == key1:
+                input_manager.speak("Running object detection")
+                detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
+                detector.run_inference(Camera.get_image())
+                detections = detector.process_results(normalize=True)
+                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+            
+            elif key == key2:
+                input_manager.speak("Running OCR")
+                ocr_processor = OCRProcessor()
+                ocr_processor.ocr_on_image(Camera.get_image())
+                ocr_processor.display_annotated_image("Object_Detection_Module/cars_on_road.jpeg")
         
+
+
+
+        # Set action handlers for the main menu
+        input_manager.set_action_handler('single', MainMenu_SinglePress)
+        input_manager.set_action_handler('double', MainMenu_DoublePress)
+        input_manager.set_action_handler('triple', MainMenu_TriplePress)
+        input_manager.set_action_handler('hold', MainMenu_Hold)
+        
+
 
         input_manager.start()
         
