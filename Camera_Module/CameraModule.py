@@ -6,7 +6,7 @@ class CameraModule:
     def __init__(self, base_url):
         """
         Initialize the CameraModule with the base URL of the IPWebcam server.
-        :param base_url: Base URL of the IPWebcam server (e.g., http://192.168.100.7:8080)
+        :param base_url: Base URL of the IPWebcam server (e.g., http://192.168.xxx.xxx:8080)
         """
         self.base_url = base_url
         self.video_url = f"{self.base_url}/video"

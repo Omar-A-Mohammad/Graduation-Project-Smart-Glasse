@@ -4,7 +4,7 @@ from OCR_Module.OCR_Processor import OCRProcessor
 from Currency_Module.curr import YOLODetector as CurrencyDetector
 from Camera_Module.CameraModule import CameraModule
 
-Camera = CameraModule("http://192.168.100.7:8080")
+Camera = CameraModule("http://192.168.148.153:8080")
 
 # Set up logging
 level = InputManager.logging.INFO
@@ -47,19 +47,26 @@ def main():
             InputManager.HapticFeedback.double_pulse()
 
             if key == key1:
-                input_manager.speak("Running object detection")
-                detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
-                detector.run_inference(Camera.get_image())
-                detections = detector.process_results(normalize=True)
-                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                try:
+                    input_manager.speak("Running object detection")
+                    detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
+                    detector.run_inference(Camera.get_image())
+                    detections = detector.process_results(normalize=True)
+                    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                except Exception as e:
+                    input_manager.speak(f"Error running object detection: {str(e)}")
+                    logger.error(f"Error running object detection: {str(e)}")
 
             elif key == key2:
-                input_manager.speak("Running currency detection")
-                detector = CurrencyDetector("Currency_Module/cur_n100_runs/best.pt")
-                detector.run_inference(Camera.get_image())
-                detections = detector.process_results(normalize=True)
-                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
-
+                try:
+                    input_manager.speak("Running currency detection")
+                    detector = CurrencyDetector("Currency_Module/cur_n100_runs/best.pt")
+                    detector.run_inference(Camera.get_image())
+                    detections = detector.process_results(normalize=True)
+                    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                except Exception as e:
+                    input_manager.speak(f"Error running currency detection: {str(e)}")
+                    logger.error(f"Error running currency detection: {str(e)}")
 
         def MainMenu_TriplePress(key):
             """
@@ -70,18 +77,25 @@ def main():
 
 
             if key == key1:
-                input_manager.speak("Running object detection")
-                detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
-                detector.run_inference(Camera.get_image())
-                detections = detector.process_results(normalize=True)
-                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
-            
-            elif key == key2:
-                input_manager.speak("Running OCR")
-                ocr_processor = OCRProcessor()
-                ocr_processor.ocr_on_image(Camera.get_image())
-                ocr_processor.display_annotated_image("Object_Detection_Module/cars_on_road.jpeg")
+                try:
+                    input_manager.speak("Running object detection")
+                    detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
+                    detector.run_inference(Camera.get_image())
+                    detections = detector.process_results(normalize=True)
+                    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                except:
+                    input_manager.speak("Error running object detection")
+                    logger.error("Error running object detection")
 
+            elif key == key2:
+                try:
+                    input_manager.speak("Running OCR")
+                    ocr_processor = OCRProcessor()
+                    ocr_processor.ocr_on_image(Camera.get_image())
+                    ocr_processor.display_annotated_image("Object_Detection_Module/cars_on_road.jpeg")
+                except Exception as e:
+                    input_manager.speak(f"Error running OCR: {str(e)}")
+                    logger.error(f"Error running OCR: {str(e)}")
 
         def MainMenu_Hold(key):
             """
@@ -91,17 +105,25 @@ def main():
 
             InputManager.HapticFeedback.long_pulse()
             if key == key1:
-                input_manager.speak("Running object detection")
-                detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
-                detector.run_inference(Camera.get_image())
-                detections = detector.process_results(normalize=True)
-                detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
-            
+                try:
+                    input_manager.speak("Running object detection")
+                    detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
+                    detector.run_inference(Camera.get_image())
+                    detections = detector.process_results(normalize=True)
+                    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                except Exception as e:
+                    input_manager.speak(f"Error running object detection: {str(e)}")
+                    logger.error(f"Error running object detection: {str(e)}")
+
             elif key == key2:
-                input_manager.speak("Running OCR")
-                ocr_processor = OCRProcessor()
-                ocr_processor.ocr_on_image(Camera.get_image())
-                ocr_processor.display_annotated_image("Object_Detection_Module/cars_on_road.jpeg")
+                try:
+                    input_manager.speak("Running OCR")
+                    ocr_processor = OCRProcessor()
+                    ocr_processor.ocr_on_image(Camera.get_image())
+                    ocr_processor.display_annotated_image("Object_Detection_Module/cars_on_road.jpeg")
+                except Exception as e:
+                    input_manager.speak(f"Error running OCR: {str(e)}")
+                    logger.error(f"Error running OCR: {str(e)}")
         
 
 
@@ -122,6 +144,10 @@ def main():
     except KeyboardInterrupt:
         logger.info("Shutting down...")
         input_manager.stop()
+    
+    except Exception as e:
+        logger.error(f"An unexpected error occurred: {str(e)}")
+        input_manager.speak(f"An unexpected error occurred: {str(e)}")
 
 if __name__ == "__main__":
     main()

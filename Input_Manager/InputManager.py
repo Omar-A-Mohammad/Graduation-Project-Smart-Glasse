@@ -6,7 +6,6 @@ import logging
 import pyttsx3
 import winsound
 
-import sys # Import sys for platform check
 import queue # Import the queue module
 
 # Set up logging
@@ -53,14 +52,13 @@ class HapticFeedback:
         time.sleep(0.1)
         winsound.Beep(800, 100)
 
-
 class SpeechEngine:
     """
-    Text-to-speech engine wrapper using pyttsx3 with a dedicated speech thread.
-    Uses a queue to handle speech requests non-blockingly from the caller's perspective.
+    Robust Text-to-speech engine wrapper using pyttsx3 with a dedicated speech thread.
+    Creates a new engine instance for each utterance to prevent state issues.
+    Uses a queue to handle speech requests non-blockingly.
     """
 
-    # Define a sentinel value to signal the speech thread to stop
     _stop_sentinel = object()
 
     def __init__(self, rate: int = 150):
@@ -70,122 +68,151 @@ class SpeechEngine:
         Args:
             rate (int): Speech rate in words per minute.
         """
-        logger.debug("Initializing pyttsx3 engine for dedicated thread...")
+        logger.debug("Initializing SpeechEngine...")
+        self.rate = rate  # Store rate for later use
+        self._speech_queue = queue.Queue()
+        self._speech_thread = None
+        self._initialize_thread()
+
+    def _initialize_thread(self):
+        """Initialize and start the speech processing thread."""
         try:
-            self.engine = pyttsx3.init()
-            logger.debug("pyttsx3 engine initialized.")
-
-            self.engine.setProperty('rate', rate)
-            logger.debug("Speech rate set to: {}".format(rate))
-
-            # Use a thread-safe queue for communication
-            self._speech_queue = queue.Queue()
-
-            # Create and start the dedicated speech processing thread
-            self._speech_thread = threading.Thread(target=self._speech_loop, daemon=True)
+            # Test engine initialization first
+            test_engine = pyttsx3.init()
+            test_engine.setProperty('rate', self.rate)
+            test_engine.stop()
+            
+            self._speech_thread = threading.Thread(
+                target=self._speech_loop,
+                daemon=True,
+                name="SpeechEngineThread"
+            )
             self._speech_thread.start()
-
-            logger.debug("Dedicated speech thread started.")
-            logger.debug("SpeechEngine setup complete.")
-
+            logger.debug("Speech thread started successfully.")
         except Exception as e:
-            logger.error(f"Error initializing speech engine: {e}", exc_info=True)
-            self._speech_thread = None
+            logger.error(f"Failed to initialize speech thread: {e}", exc_info=True)
+            raise RuntimeError("Speech engine initialization failed") from e
 
     def _speech_loop(self):
         """
         The main loop for the dedicated speech thread.
-        Gets messages from the queue and speaks them using runAndWait().
+        Creates a new engine instance for each utterance to ensure reliability.
         """
-        logger.debug("Speech thread started.")
-        if not self.engine:
-            logger.error("Speech thread cannot run, engine not initialized.")
-            return
-
-        # This loop runs indefinitely until the stop sentinel is received
+        logger.debug("Speech processing loop started.")
+        
         while True:
             try:
-                # Get the next item from the queue. Blocks until an item is available.
                 item = self._speech_queue.get()
-
-                # Check if the item is the stop sentinel
+                
                 if item is self._stop_sentinel:
-                    logger.debug("Stop sentinel received, exiting speech loop.")
-                    self._speech_queue.task_done() # Indicate that the sentinel task is done
-                    break # Exit the loop
-
-                # If it's not the sentinel, it should be text to speak
-                if isinstance(item, str) and item:
-                    logger.debug(f"Speech thread speaking: '{item}'")
-                    try:
-                        # Use say() and runAndWait() in the dedicated thread.
-                        # runAndWait() blocks this thread until speech is done.
-                        self.engine.say(item)
-                        self.engine.runAndWait()
-                        logger.debug(f"Speech thread finished speaking: '{item}'")
-                    except Exception as e:
-                        logger.error(f"Error during speech in thread: {e}", exc_info=True)
-
-                self._speech_queue.task_done() # Indicate that the task is done
-
+                    logger.debug("Received stop signal, exiting speech loop.")
+                    self._speech_queue.task_done()
+                    break
+                    
+                if isinstance(item, str) and item.strip():
+                    self._process_speech_item(item)
+                    
+                self._speech_queue.task_done()
+                
             except Exception as e:
-                 # Catch any unexpected errors within the loop to prevent thread death
-                 logger.error(f"Unexpected error in speech thread loop: {e}", exc_info=True)
-                 self._speech_queue.task_done() # Ensure task is marked done even on error
+                logger.error(f"Unexpected error in speech loop: {e}", exc_info=True)
+                self._speech_queue.task_done()
+                time.sleep(0.1)  # Prevent tight error loop
 
-        logger.debug("Speech thread exiting.")
-        # Clean up engine resources when the loop breaks
+    def _process_speech_item(self, text: str):
+        """
+        Process a single speech item by creating a new engine instance.
+        
+        Args:
+            text (str): Text to be spoken.
+        """
+        engine = None
         try:
-             self.engine.stop() # Use engine.stop() to clean up resources associated with runAndWait
-             logger.debug("pyttsx3 engine resources stopped in thread.")
+            logger.debug(f"Processing speech item: '{text}'")
+            start_time = time.time()
+            
+            engine = pyttsx3.init()
+            engine.setProperty('rate', self.rate)
+            engine.say(text)
+            engine.runAndWait()
+            
+            duration = time.time() - start_time
+            logger.debug(f"Finished speaking in {duration:.2f}s: '{text}'")
+            
         except Exception as e:
-             logger.error(f"Error stopping engine resources in thread: {e}", exc_info=True)
-
+            logger.error(f"Error during speech synthesis: {e}", exc_info=True)
+        finally:
+            if engine:
+                try:
+                    engine.stop()
+                except:
+                    pass
 
     def speak(self, text: str):
         """
         Queue text to be spoken by the dedicated speech thread.
-
+        
         Args:
             text (str): Text to be spoken.
+            
+        Raises:
+            RuntimeError: If the speech engine is not properly initialized.
         """
-        # Only add to the queue if the engine and queue were successfully initialized
-        if self._speech_queue and self.engine:
-            logger.debug(f"Adding text to speech queue: '{text}'")
-            try:
-                self._speech_queue.put(text)
-            except Exception as e:
-                 logger.error(f"Error putting text in speech queue: {e}", exc_info=True)
-        else:
-            logger.warning(f"Speech queue not available. Cannot speak: '{text}'")
-
+        if not isinstance(text, str) or not text.strip():
+            logger.warning("Attempted to speak empty or non-string text")
+            return
+            
+        if not self._speech_thread or not self._speech_thread.is_alive():
+            logger.error("Speech thread not available")
+            raise RuntimeError("Speech engine is not running")
+            
+        try:
+            self._speech_queue.put(text)
+            logger.debug(f"Queued speech text: '{text}'")
+        except Exception as e:
+            logger.error(f"Failed to queue speech text: {e}", exc_info=True)
+            raise RuntimeError("Failed to queue speech text") from e
 
     def stop(self):
-        """
-        Stops the speech engine and its dedicated background thread.
-        Sends a stop signal to the queue and waits for the thread to finish.
-        """
-        if self._speech_queue and self._speech_thread and self._speech_thread.is_alive():
-            logger.debug("Stopping SpeechEngine and dedicated thread...")
+        """Stop the speech engine and its dedicated thread."""
+        if self._speech_thread and self._speech_thread.is_alive():
+            logger.debug("Initiating graceful shutdown...")
             try:
-                # Put the stop sentinel into the queue
                 self._speech_queue.put(self._stop_sentinel)
-
-                # Wait for the speech thread to finish processing the queue and exit
-                # Use a timeout to prevent the main thread from hanging indefinitely
-                self._speech_thread.join(timeout=5)
+                self._speech_thread.join(timeout=3)
+                
                 if self._speech_thread.is_alive():
-                    logger.warning("Speech thread did not join within timeout. It might still be running.")
-                else:
-                    logger.debug("Dedicated speech thread successfully joined.")
-
+                    logger.warning("Speech thread did not shutdown gracefully")
             except Exception as e:
-                logger.error(f"Error during SpeechEngine stop: {e}", exc_info=True)
-
-        # Ensure engine reference is cleared regardless of thread join status
+                logger.error(f"Error during shutdown: {e}", exc_info=True)
+        
         self._speech_thread = None
         logger.info("SpeechEngine stopped.")
 
+    def is_speaking(self) -> bool:
+        """
+        Check if there are pending speech items in the queue.
+        
+        Returns:
+            bool: True if there are items in the queue, False otherwise.
+        """
+        return not self._speech_queue.empty()
+
+    def wait_until_done(self, timeout: float | None = None) -> bool:
+        """
+        Wait until all queued speech items are processed.
+        
+        Args:
+            timeout (float): Maximum time to wait in seconds.
+            
+        Returns:
+            bool: True if all items processed, False if timeout occurred.
+        """
+        try:
+            self._speech_queue.join()
+            return True
+        except:
+            return False
 
 class KeyDetector:
     """For a specified key, detects different types of key presses: single, double, triple, hold"""
