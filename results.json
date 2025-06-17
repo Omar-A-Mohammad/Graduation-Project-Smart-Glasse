@@ -1,0 +1,16 @@
+{
+    "image_path": "C:/Users/mahmoy2/OneDrive - Medtronic PLC/Downloads/Graduation-Project-Smart-Glasses/Color Detection/traffic light yellow.jpg",
+    "detected_objects": [
+        {
+            "label": "traffic light",
+            "bbox": [
+                95,
+                118,
+                420,
+                1034
+            ],
+            "confidence": 0.27486658096313477,
+            "color": "Yellow"
+        }
+    ]
+}
