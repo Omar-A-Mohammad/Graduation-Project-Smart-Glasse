@@ -28,7 +28,8 @@ def main():
         #     input_manager.speak(f"Custom action for {key} single press")
         # input_manager.set_action_handler('single', custom_single_handler)
         
-        # Main Menu actions
+
+        ### Main Menu actions ###
 
         def MainMenu_SinglePress(key):
             """
@@ -37,7 +38,6 @@ def main():
             """
             InputManager.HapticFeedback.short_pulse()
             input_manager.speak("Single press detected")
-
 
         def MainMenu_DoublePress(key):
             """
@@ -124,17 +124,12 @@ def main():
                 except Exception as e:
                     input_manager.speak(f"Error running OCR: {str(e)}")
                     logger.error(f"Error running OCR: {str(e)}")
-        
-
-
-
-        # Set action handlers for the main menu
+    
+        ### Set action handlers for the main menu ###
         input_manager.set_action_handler('single', MainMenu_SinglePress)
         input_manager.set_action_handler('double', MainMenu_DoublePress)
         input_manager.set_action_handler('triple', MainMenu_TriplePress)
         input_manager.set_action_handler('hold', MainMenu_Hold)
-        
-
 
         input_manager.start()
         
@@ -143,11 +138,10 @@ def main():
             
     except KeyboardInterrupt:
         logger.info("Shutting down...")
-        input_manager.stop()
     
     except Exception as e:
         logger.error(f"An unexpected error occurred: {str(e)}")
-        input_manager.speak(f"An unexpected error occurred: {str(e)}")
+
 
 if __name__ == "__main__":
     main()

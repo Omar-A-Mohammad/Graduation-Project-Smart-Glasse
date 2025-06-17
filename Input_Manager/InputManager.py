@@ -6,6 +6,10 @@ import logging
 import pyttsx3
 import winsound
 
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+
+import sys # Import sys for platform check
 import queue # Import the queue module
 
 # Set up logging
@@ -52,6 +56,8 @@ class HapticFeedback:
         time.sleep(0.1)
         winsound.Beep(800, 100)
 
+# ----------------------------------------
+
 class SpeechEngine:
     """
     Robust Text-to-speech engine wrapper using pyttsx3 with a dedicated speech thread.
@@ -69,6 +75,11 @@ class SpeechEngine:
             rate (int): Speech rate in words per minute.
         """
         logger.debug("Initializing SpeechEngine...")
+        
+        # Reduce logging from dependencies
+        logging.getLogger('comtypes').setLevel(logging.WARNING)
+        logging.getLogger('comtypes.client').setLevel(logging.WARNING)
+
         self.rate = rate  # Store rate for later use
         self._speech_queue = queue.Queue()
         self._speech_thread = None
@@ -203,8 +214,8 @@ class SpeechEngine:
         Wait until all queued speech items are processed.
         
         Args:
-            timeout (float): Maximum time to wait in seconds.
-            
+            timeout (float | None): Maximum time to wait in seconds.
+
         Returns:
             bool: True if all items processed, False if timeout occurred.
         """
@@ -213,6 +224,8 @@ class SpeechEngine:
             return True
         except:
             return False
+
+# ----------------------------------------
 
 class KeyDetector:
     """For a specified key, detects different types of key presses: single, double, triple, hold"""
