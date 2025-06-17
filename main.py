@@ -4,7 +4,12 @@ from OCR_Module.OCR_Processor import OCRProcessor
 from Currency_Module.curr import YOLODetector as CurrencyDetector
 from Camera_Module.CameraModule import CameraModule
 
-Camera = CameraModule("http://192.168.148.153:8080")
+import json
+import cv2
+import numpy
+
+# Initialize the camera module with the IP address of the IPCamera
+Camera = CameraModule("http://192.168.148.153:8080") # IPCamera changes the IP when you reconnect to your wifi, so you need to update it here as well.
 
 # Set up logging
 level = InputManager.logging.INFO
@@ -50,9 +55,25 @@ def main():
                 try:
                     input_manager.speak("Running object detection")
                     detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
-                    detector.run_inference(Camera.get_image())
+
+                    current_image = numpy.array(Camera.get_image(),dtype=numpy.uint8)
+                    cv2.imwrite("Object_Detection_Module/current_image.jpg", current_image)
+                    current_image_path = "Object_Detection_Module/current_image.jpg"
+                    detector.run_inference(current_image)
                     detections = detector.process_results(normalize=True)
-                    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                    detector.visualize_detections(current_image_path, detections, "Object_Detection_Module/output_visualized.jpg")
+                    
+                    print(detections,"\n")
+                    
+                    if detections:
+                        for i in range(len(detections)):
+                            print(f"Detection {i+1}:")
+                            print(f"Class: {detections[i]['text']}")
+                            input_manager.speak(f"{detections[i]['text']} detected")
+                            print(f"Confidence: {detections[i]['confidence']:.2f}")
+                    else:
+                        print("No detections found.")
+
                 except Exception as e:
                     input_manager.speak(f"Error running object detection: {str(e)}")
                     logger.error(f"Error running object detection: {str(e)}")
@@ -61,9 +82,25 @@ def main():
                 try:
                     input_manager.speak("Running currency detection")
                     detector = CurrencyDetector("Currency_Module/cur_n100_runs/best.pt")
-                    detector.run_inference(Camera.get_image())
+                    
+                    current_image = numpy.array(Camera.get_image(),dtype=numpy.uint8)
+                    cv2.imwrite("Currency_Module/current_image.jpg", current_image)
+                    current_image_path = "Currency_Module/current_image.jpg"
+                    detector.run_inference(current_image)
                     detections = detector.process_results(normalize=True)
-                    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                    detector.visualize_detections(current_image_path, detections, "Currency_Module/output_visualized.jpg")
+                    
+                    print(detections,"\n")
+                    
+                    if detections:
+                        for i in range(len(detections)):
+                            print(f"Detection {i+1}:")
+                            print(f"Class: {detections[i]['text']}")
+                            input_manager.speak(f"{detections[i]['text']} detected")
+                            print(f"Confidence: {detections[i]['confidence']:.2f}")
+                    else:
+                        print("No detections found.")
+
                 except Exception as e:
                     input_manager.speak(f"Error running currency detection: {str(e)}")
                     logger.error(f"Error running currency detection: {str(e)}")
@@ -91,8 +128,14 @@ def main():
                 try:
                     input_manager.speak("Running OCR")
                     ocr_processor = OCRProcessor()
-                    ocr_processor.ocr_on_image(Camera.get_image())
-                    ocr_processor.display_annotated_image("Object_Detection_Module/cars_on_road.jpeg")
+
+                    current_image = numpy.array(Camera.get_image(),dtype=numpy.uint8)
+                    cv2.imwrite("OCR_Module/current_image.jpg", current_image)
+                    current_image_path = "OCR_Module/current_image.jpg"
+
+                    ocr_processor.ocr_on_image(current_image_path)
+                    ocr_processor.save_annotated_image("OCR_Module/annotated_image.jpg")
+                    ocr_processor.display_annotated_image("OCR_Module/annotated_image.jpg")
                 except Exception as e:
                     input_manager.speak(f"Error running OCR: {str(e)}")
                     logger.error(f"Error running OCR: {str(e)}")

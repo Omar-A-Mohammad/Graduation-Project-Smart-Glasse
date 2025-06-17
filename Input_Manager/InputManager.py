@@ -6,10 +6,6 @@ import logging
 import pyttsx3
 import winsound
 
-import asyncio
-from concurrent.futures import ThreadPoolExecutor
-
-import sys # Import sys for platform check
 import queue # Import the queue module
 
 # Set up logging
