@@ -175,7 +175,7 @@ def main():
         input_manager.set_action_handler('hold', MainMenu_Hold)
 
         input_manager.start()
-        
+        #hello everyone 
         while True:
             InputManager.time.sleep(0.1)
             
