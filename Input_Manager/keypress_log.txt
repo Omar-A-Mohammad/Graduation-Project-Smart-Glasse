@@ -15038,3 +15038,68 @@ AttributeError: 'SpeechEngine' object has no attribute 'rate'
 2025-06-17 04:34:23,682 - DEBUG - platform is win32
 2025-06-17 04:34:23,769 - DEBUG - CACHEDIR=C:\Users\youssef\.matplotlib
 2025-06-17 04:34:23,776 - DEBUG - Using fontManager instance from C:\Users\youssef\.matplotlib\fontlist-v390.json
+2025-06-18 01:00:40,965 - INFO - Listening for key presses: a and b
+2025-06-18 01:00:40,966 - INFO - Press Ctrl+C to exit.
+2025-06-18 01:00:41,291 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-18 01:01:17,076 - INFO - Shutting down...
+2025-06-18 01:01:48,199 - INFO - Listening for key presses: a and b
+2025-06-18 01:01:48,200 - INFO - Press Ctrl+C to exit.
+2025-06-18 01:01:48,349 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-18 01:04:19,549 - INFO - Starting Input Manager...
+2025-06-18 01:04:19,550 - DEBUG - Initializing InputManager...
+2025-06-18 01:04:19,550 - DEBUG - Initializing SpeechEngine...
+2025-06-18 01:04:19,838 - DEBUG - Speech processing loop started.
+2025-06-18 01:04:19,838 - DEBUG - Speech thread started successfully.
+2025-06-18 01:04:19,842 - DEBUG - Speech engine initialized.
+2025-06-18 01:04:19,842 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-18 01:04:19,843 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-18 01:04:19,843 - DEBUG - InputManager setup complete.
+2025-06-18 01:04:19,843 - INFO - Input Manager initialized.
+2025-06-18 01:04:19,843 - INFO - Listening for key presses: a and b
+2025-06-18 01:04:19,926 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-18 01:04:19,927 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A and B.'
+2025-06-18 01:04:19,927 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A and B.'
+2025-06-18 01:04:24,896 - DEBUG - Finished speaking in 4.97s: 'System ready. Listening for input on keys A and B.'
+2025-06-18 01:04:27,632 - DEBUG - Key a pressed at 1750197867.6304076
+2025-06-18 01:04:27,727 - DEBUG - Key a released at 1750197867.7259746, duration 0.096s, count 1
+2025-06-18 01:04:28,229 - DEBUG - Single tap detected on key a
+2025-06-18 01:04:28,230 - INFO - Detected single press on key A
+2025-06-18 01:04:28,232 - DEBUG - Short pulse order received
+2025-06-18 01:04:28,336 - DEBUG - Queued speech text: 'Key A pressed once'
+2025-06-18 01:04:28,336 - DEBUG - Processing speech item: 'Key A pressed once'
+2025-06-18 01:04:30,612 - DEBUG - Finished speaking in 2.27s: 'Key A pressed once'
+2025-06-18 01:04:33,910 - DEBUG - Key a pressed at 1750197873.909106
+2025-06-18 01:04:33,990 - DEBUG - Key a released at 1750197873.9892032, duration 0.080s, count 1
+2025-06-18 01:04:34,045 - DEBUG - Key a pressed at 1750197874.044633
+2025-06-18 01:04:34,122 - DEBUG - Key a released at 1750197874.1212735, duration 0.077s, count 2
+2025-06-18 01:04:34,630 - DEBUG - Double tap detected on key a
+2025-06-18 01:04:34,631 - INFO - Detected double press on key A
+2025-06-18 01:04:34,633 - DEBUG - Double pulse order received
+2025-06-18 01:04:34,955 - DEBUG - Queued speech text: 'Key A pressed twice'
+2025-06-18 01:04:34,956 - DEBUG - Processing speech item: 'Key A pressed twice'
+2025-06-18 01:04:37,281 - DEBUG - Finished speaking in 2.32s: 'Key A pressed twice'
+2025-06-18 01:04:39,819 - DEBUG - Key a pressed at 1750197879.8180132
+2025-06-18 01:04:40,331 - DEBUG - Hold detected for key a at 1750197880.3316658
+2025-06-18 01:04:40,334 - INFO - Detected hold press on key A
+2025-06-18 01:04:40,336 - DEBUG - Long pulse order received
+2025-06-18 01:04:40,642 - DEBUG - Queued speech text: 'Key A held down'
+2025-06-18 01:04:40,642 - DEBUG - Processing speech item: 'Key A held down'
+2025-06-18 01:04:40,644 - DEBUG - Key a hold triggered at 1750197880.6441805
+2025-06-18 01:04:42,705 - DEBUG - Finished speaking in 2.06s: 'Key A held down'
+2025-06-18 01:04:56,939 - INFO - Shutting down...
+2025-06-18 01:04:56,941 - DEBUG - Initiating graceful shutdown...
+2025-06-18 01:04:56,942 - DEBUG - Received stop signal, exiting speech loop.
+2025-06-18 01:04:56,944 - INFO - SpeechEngine stopped.
+2025-06-18 01:04:56,946 - INFO - Input manager stopped.
+2025-06-18 01:05:41,787 - INFO - Listening for key presses: a and b
+2025-06-18 01:05:41,788 - INFO - Press Ctrl+C to exit.
+2025-06-18 01:05:41,884 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-18 01:05:57,467 - INFO - Detected single press on key A
+2025-06-18 01:06:02,426 - INFO - Detected double press on key A
+2025-06-18 01:06:25,575 - ERROR - Error running object detection: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-06-18 01:06:36,282 - INFO - Listening for key presses: a and b
+2025-06-18 01:06:36,282 - INFO - Press Ctrl+C to exit.
+2025-06-18 01:06:36,396 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-18 01:06:40,359 - INFO - Detected single press on key B
+2025-06-18 01:07:01,464 - INFO - Detected single press on key A
+2025-06-18 01:07:03,305 - INFO - Detected single press on key A

@@ -1,4 +1,4 @@
-import Input_Manager.InputManager as InputManager
+import Input_Manager.InputManager as InputManager #my name is sehs
 from Object_Detection_Module.Obj_Detection import YOLODetector as ObjectDetector
 from OCR_Module.OCR_Processor import OCRProcessor
 from Currency_Module.curr import YOLODetector as CurrencyDetector
