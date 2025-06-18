@@ -118,22 +118,22 @@ class YOLODetector:
         cv2.imwrite(output_path, image)
 
 
-# Example usage
-if __name__ == "__main__":
-    # Initialize the detector
-    detector = YOLODetector("Currency_Module/cur_n100_runs/best.pt")
+# # Example usage
+# if __name__ == "__main__":
+#     # Initialize the detector
+#     detector = YOLODetector("Currency_Module/cur_n100_runs/best.pt")
 
-    # Run inference on an image
-    results = detector.run_inference("Currency_Module/001456598.jpg")
+#     # Run inference on an image
+#     results = detector.run_inference("Currency_Module/001456598.jpg")
 
-    # Process the results (normalize bounding boxes)
-    detections = detector.process_results(normalize=True)
+#     # Process the results (normalize bounding boxes)
+#     detections = detector.process_results(normalize=True)
 
-    detector.visualize_detections("Currency_Module/001456598.jpg", detections, "Currency_Module/output_visualized.jpg")
+#     detector.visualize_detections("Currency_Module/001456598.jpg", detections, "Currency_Module/output_visualized.jpg")
 
-    # Save the results to a JSON file
-    detector.save_results(detections, "Currency_Module/output_2.json")
+#     # Save the results to a JSON file
+#     detector.save_results(detections, "Currency_Module/output_2.json")
 
-    # Load and print the results
-    loaded_detections = detector.load_results("Currency_Module/output_2.json")
-    print(loaded_detections)
+#     # Load and print the results
+#     loaded_detections = detector.load_results("Currency_Module/output_2.json")
+#     print(loaded_detections)

@@ -2,14 +2,14 @@ import Input_Manager.InputManager as InputManager
 from Object_Detection_Module.Obj_Detection import YOLODetector as ObjectDetector
 from OCR_Module.OCR_Processor import OCRProcessor
 from Currency_Module.curr import YOLODetector as CurrencyDetector
-from Camera_Module.CameraModule import CameraModule
-
+from Camera_Module.LabCameraModule import LabCameraModule
+from Color_Detection.Color_Detection import colordetector
 import json
 import cv2
 import numpy
 
 # Initialize the camera module with the IP address of the IPCamera
-Camera = CameraModule(0) # IPCamera changes the IP when you reconnect to your wifi, so you need to update it here as well.
+Camera = LabCameraModule(0) # IPCamera changes the IP when you reconnect to your wifi, so you need to update it here as well.
 
 # Set up logging
 level = InputManager.logging.INFO
@@ -115,14 +115,14 @@ def main():
 
             if key == key1:
                 try:
-                    input_manager.speak("Running object detection")
-                    detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
+                    input_manager.speak("Color Detection")
+                    detector = colordetector("C:/Users/mahmoy2/OneDrive - Medtronic PLC/Downloads/Graduation-Project-Smart-Glasses/Color_Detection/yolo11n.pt")
                     detector.run_inference(Camera.get_image())
                     detections = detector.process_results(normalize=True)
-                    detector.visualize_detections("Object_Detection_Module/cars_on_road.jpeg", detections, "Object_Detection_Module/output_visualized.jpg")
+                    detector.visualize_detections("Color_Detection_Module/cars_on_road.jpeg", detections, "Color_Detection_Module/output_visualized.jpg")
                 except:
-                    input_manager.speak("Error running object detection")
-                    logger.error("Error running object detection")
+                    input_manager.speak("Error running color detection")
+                    logger.error("Error running color detection")
 
             elif key == key2:
                 try:
