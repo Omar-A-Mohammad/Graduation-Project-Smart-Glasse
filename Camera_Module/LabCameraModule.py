@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import requests
 
-class CameraModule:
+class LabCameraModule:
     def __init__(self, source):
         """
         Initialize with either a local camera index (e.g., 0) or an IP webcam URL.

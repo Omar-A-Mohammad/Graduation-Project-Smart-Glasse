@@ -1,5 +1,5 @@
 {
-    "image_path": "C:/Users/mahmoy2/OneDrive - Medtronic PLC/Downloads/Graduation-Project-Smart-Glasses/Color Detection/traffic light yellow.jpg",
+    "image_path": "C:/Users/mahmoy2/OneDrive - Medtronic PLC/Downloads/Graduation-Project-Smart-Glasses/Color_Detection/traffic light yellow.jpg",
     "detected_objects": [
         {
             "label": "traffic light",
