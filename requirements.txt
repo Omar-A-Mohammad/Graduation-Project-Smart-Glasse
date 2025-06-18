@@ -1,3 +1,5 @@
 pynput
 pyttsx3
-
+ultralytics
+keyboard
+pytesseract
