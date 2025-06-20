@@ -12,8 +12,8 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler('Input_Manager/keypress_log.txt')
+        logging.StreamHandler()
+        #,logging.FileHandler('Input_Manager/keypress_log.txt')
     ]
 )
 logger = logging.getLogger(__name__)
@@ -212,3 +212,29 @@ class InputManager:
         keyboard.unhook_all()
         self.speech_engine.stop()
         logger.info("InputManager stopped.")
+
+
+def main():
+    """Main function to run the input manager"""
+    logger.info("Starting Input Manager...")
+    input_manager = InputManager()
+    logger.info("Input Manager initialized.")
+    try:
+        
+        keys = list(input_manager.key_detectors.keys())
+        key1, key2= keys[0], keys[1]
+        logger.info(f"Listening for key presses: {key1} and {key2}")
+
+        print(f"\nPress '{key1}' or '{key2}' to test the input manager. Press Ctrl+C to exit. \n")
+        
+        input_manager.start()
+        
+        while True:
+            time.sleep(0.1)
+            
+    except KeyboardInterrupt:
+        logger.info("Shutting down...")
+        input_manager.stop()
+
+if __name__ == "__main__":
+    main()

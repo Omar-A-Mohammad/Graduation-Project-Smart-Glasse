@@ -19775,3 +19775,43 @@ AttributeError: 'SpeechEngine' object has no attribute 'rate'
 2025-06-20 01:58:42,368 - INFO - Detected single press on key with scan code -176
 2025-06-20 01:58:56,070 - INFO - Detected single press on key with scan code -176
 2025-06-20 01:59:12,891 - INFO - Detected single press on key with scan code -179
+2025-06-20 11:04:41,468 - INFO - Starting Input Manager...
+2025-06-20 11:04:41,468 - DEBUG - Initializing InputManager...
+2025-06-20 11:04:41,469 - DEBUG - Initializing SpeechEngine...
+2025-06-20 11:04:41,986 - DEBUG - Speech processing loop started.
+2025-06-20 11:04:41,987 - DEBUG - Speech thread started successfully.
+2025-06-20 11:04:41,992 - DEBUG - Speech engine initialized.
+2025-06-20 11:04:41,993 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-20 11:04:41,993 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-20 11:04:41,993 - DEBUG - InputManager setup complete.
+2025-06-20 11:04:41,993 - INFO - Input Manager initialized.
+2025-06-20 11:04:41,993 - INFO - Listening for key presses: a and b
+2025-06-20 11:04:42,236 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-20 11:04:42,237 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A and B.'
+2025-06-20 11:04:42,237 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A and B.'
+2025-06-20 11:04:47,665 - DEBUG - Finished speaking in 5.43s: 'System ready. Listening for input on keys A and B.'
+2025-06-20 11:04:49,255 - DEBUG - Key a pressed at 1750406689.2549584
+2025-06-20 11:04:49,388 - DEBUG - Key a released at 1750406689.388326, duration 0.133s, count 1
+2025-06-20 11:04:49,895 - DEBUG - Single tap detected on key a
+2025-06-20 11:04:49,896 - INFO - Detected single press on key A
+2025-06-20 11:04:49,896 - DEBUG - Short pulse order received
+2025-06-20 11:04:50,004 - DEBUG - Queued speech text: 'Key A pressed once'
+2025-06-20 11:04:50,004 - DEBUG - Processing speech item: 'Key A pressed once'
+2025-06-20 11:04:51,358 - DEBUG - Key b pressed at 1750406691.357731
+2025-06-20 11:04:51,474 - DEBUG - Key b released at 1750406691.4742422, duration 0.117s, count 1
+2025-06-20 11:04:51,975 - DEBUG - Single tap detected on key b
+2025-06-20 11:04:51,976 - INFO - Detected single press on key B
+2025-06-20 11:04:51,976 - DEBUG - Short pulse order received
+2025-06-20 11:04:52,086 - DEBUG - Queued speech text: 'Key B pressed once'
+2025-06-20 11:04:52,517 - DEBUG - Finished speaking in 2.51s: 'Key A pressed once'
+2025-06-20 11:04:52,524 - DEBUG - Processing speech item: 'Key B pressed once'
+2025-06-20 11:04:55,155 - DEBUG - Finished speaking in 2.63s: 'Key B pressed once'
+2025-06-20 11:04:55,968 - DEBUG - Key a pressed at 1750406695.9678059
+2025-06-20 11:04:56,060 - DEBUG - Key a released at 1750406696.059617, duration 0.092s, count 1
+2025-06-20 11:04:56,214 - DEBUG - Key a pressed at 1750406696.213877
+2025-06-20 11:04:56,281 - DEBUG - Key a released at 1750406696.2812839, duration 0.067s, count 2
+2025-06-20 11:04:56,794 - DEBUG - Double tap detected on key a
+2025-06-20 11:04:56,794 - INFO - Detected double press on key A
+2025-06-20 11:04:56,795 - DEBUG - Double pulse order received
+2025-06-20 11:04:57,107 - DEBUG - Queued speech text: 'Key A pressed twice'
+2025-06-20 11:04:57,108 - DEBUG - Processing speech item: 'Key A pressed twice'
