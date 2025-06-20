@@ -3,3 +3,7 @@ pyttsx3
 ultralytics
 keyboard
 pytesseract
+SpeechRecognition
+pyaudio
+opencv-python
+IPython
