@@ -8,7 +8,6 @@ from pynput import keyboard
 from typing import Optional
 import numpy
 import cv2
-
 import logging
 
 # Setup logging
@@ -20,9 +19,9 @@ input_manager = InputManager.InputManager()
 Camera = LabCameraModule(source=0)
 
 # Load object detection model once
-detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
+object_detector = ObjectDetector("Object_Detection_Module/VOC_n100_runs/best.pt")
 
-def on_press(key: keyboard.Key) -> None:
+def on_press(key) -> None:
     print(f"[DEBUG] Key pressed: {key}")
     if isinstance(key, keyboard.Key):
         if key == keyboard.Key.media_play_pause:
@@ -34,9 +33,8 @@ def on_press(key: keyboard.Key) -> None:
                 cv2.imwrite("Object_Detection_Module/current_image.jpg", current_image)
                 current_image_path = "Object_Detection_Module/current_image.jpg"
 
-                detector.run_inference(current_image)
-                detections = detector.process_results(normalize=True)
-                detector.visualize_detections(current_image_path, detections, "Object_Detection_Module/output_visualized.jpg")
+                detections = object_detector.run_inference(current_image)
+                object_detector.visualize_detections(current_image_path, detections, "Object_Detection_Module/output_visualized.jpg")
 
                 print(detections, "\n")
 
@@ -54,7 +52,30 @@ def on_press(key: keyboard.Key) -> None:
 
         elif key == keyboard.Key.media_next:
             print("ACTION: Next Track button pressed!")
-            input_manager.speak("Currency detection is not implemented yet.")
+            try:
+                input_manager.speak("Running currency detection")
+                currency_detector = CurrencyDetector("Currency_Module/cur_n100_runs/best.pt")
+                current_image = numpy.array(Camera.get_image(), dtype=numpy.uint8)
+                cv2.imwrite("Currency_Module/current_image.jpg", current_image)
+                current_image_path = "Currency_Module/current_image.jpg"
+
+                detections = currency_detector.run_inference(current_image)
+                currency_detector.visualize_detections(current_image_path, detections, "Currency_Module/output_visualized.jpg")
+                print(detections, "\n")
+
+                if detections:
+                    for i in range(len(detections)):
+                        print(f"Detection {i+1}:")
+                        print(f"Class: {detections[i]['text']}")
+                        input_manager.speak(f"{detections[i]['text']} detected")
+                        print(f"Confidence: {detections[i]['confidence']:.2f}")
+                else:
+                    print("No detections found.")
+                    input_manager.speak("No currency detected")
+
+            except Exception as e:
+                input_manager.speak(f"Error running currency detection: {str(e)}")
+                logger.error(f"Error running currency detection: {str(e)}")
 
         elif key == keyboard.Key.media_previous:
             print("ACTION: Previous Track button pressed!")
@@ -68,14 +89,17 @@ def on_press(key: keyboard.Key) -> None:
     else:
         print(f'Unknown key: {key}')
 
-def on_release(key: keyboard.Key) -> Optional[bool]:
+def on_release(key) -> None:
     print(f"[DEBUG] Key released: {key}")
     if key == keyboard.Key.esc:
         print("ESC pressed. Exiting listener...")
-        return False
+        # Stop the listener by raising StopException
+        raise keyboard.Listener.StopException()
 
-print("Listening for media key presses...")
-with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
-    listener.join()
-
+try:
+    with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+        listener.join()
+except keyboard.Listener.StopException:
+    pass
+ 
 print("Listener stopped.")
