@@ -19279,3 +19279,499 @@ AttributeError: 'SpeechEngine' object has no attribute 'rate'
 2025-06-18 23:33:23,909 - ERROR - Error running color detection
 2025-06-19 00:19:39,924 - INFO - Detected single press on key A
 2025-06-19 00:20:32,250 - INFO - Shutting down...
+2025-06-19 02:06:01,512 - INFO - Listening for key presses: a and b
+2025-06-19 02:06:01,513 - INFO - Press Ctrl+C to exit.
+2025-06-19 02:06:01,753 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 02:06:09,054 - INFO - Detected double press on key B
+2025-06-19 02:06:09,501 - ERROR - Error running currency detection: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-06-19 02:11:43,150 - INFO - Listening for key presses: a and b
+2025-06-19 02:11:43,151 - INFO - Press Ctrl+C to exit.
+2025-06-19 02:11:43,315 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 02:11:47,139 - INFO - Detected double press on key B
+2025-06-19 02:12:08,578 - ERROR - Error running currency detection: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-06-19 02:18:49,561 - INFO - Listening for key presses: a and b
+2025-06-19 02:18:49,562 - INFO - Press Ctrl+C to exit.
+2025-06-19 02:18:49,737 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 02:18:56,789 - INFO - Shutting down...
+2025-06-19 19:44:36,476 - INFO - Listening for key presses: a and b
+2025-06-19 19:44:36,477 - INFO - Press Ctrl+C to exit.
+2025-06-19 19:44:36,669 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 19:46:29,988 - INFO - Detected double press on key B
+2025-06-19 19:46:44,124 - INFO - Shutting down...
+2025-06-19 20:36:53,573 - INFO - Listening for key presses: a and b
+2025-06-19 20:36:53,573 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:36:53,741 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:37:31,871 - INFO - Shutting down...
+2025-06-19 20:37:43,285 - INFO - Listening for key presses: a and b
+2025-06-19 20:37:43,285 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:37:43,449 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:37:45,863 - INFO - Detected double press on key A
+2025-06-19 20:38:06,862 - INFO - Shutting down...
+2025-06-19 20:39:42,612 - DEBUG - Initializing InputManager...
+2025-06-19 20:39:42,612 - DEBUG - Initializing SpeechEngine...
+2025-06-19 20:39:42,845 - DEBUG - Speech processing loop started.
+2025-06-19 20:39:42,845 - DEBUG - Speech thread started successfully.
+2025-06-19 20:39:42,851 - DEBUG - Speech engine initialized.
+2025-06-19 20:39:42,851 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-19 20:39:42,852 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-19 20:39:42,852 - DEBUG - InputManager setup complete.
+2025-06-19 20:42:44,491 - INFO - Listening for key presses: a and b
+2025-06-19 20:42:44,491 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:42:44,662 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:43:04,277 - INFO - Listening for key presses: a and b
+2025-06-19 20:43:04,277 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:43:04,451 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:43:16,121 - INFO - Listening for key presses: a and b
+2025-06-19 20:43:16,122 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:43:16,284 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:43:36,387 - INFO - Listening for key presses: a and b
+2025-06-19 20:43:36,388 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:43:36,558 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:43:46,533 - INFO - Detected double press on key B
+2025-06-19 20:43:46,982 - ERROR - Error running currency detection: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2025-06-19 20:45:50,046 - INFO - Detected single press on key A
+2025-06-19 20:46:55,828 - INFO - Detected single press on key A
+2025-06-19 20:47:40,602 - INFO - Listening for key presses: a and b
+2025-06-19 20:47:40,603 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:47:40,772 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:48:14,047 - INFO - Listening for key presses: a and b
+2025-06-19 20:48:14,048 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:48:14,209 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:48:16,136 - INFO - Detected double press on key B
+2025-06-19 20:48:42,779 - INFO - Detected double press on key B
+2025-06-19 20:48:55,166 - INFO - Detected double press on key A
+2025-06-19 20:49:00,641 - INFO - Detected double press on key A
+2025-06-19 20:49:12,557 - INFO - Detected double press on key A
+2025-06-19 20:49:20,909 - INFO - Shutting down...
+2025-06-19 20:54:26,312 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 20:54:26,312 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:54:26,477 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:55:09,942 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 20:55:09,943 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:55:10,110 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:56:15,413 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 20:56:15,414 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:56:15,593 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:56:39,489 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 20:56:39,489 - INFO - Press Ctrl+C to exit.
+2025-06-19 20:56:39,757 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 20:56:41,548 - INFO - Detected double press on key A
+2025-06-19 20:56:46,551 - INFO - Detected double press on key A
+2025-06-19 20:56:50,165 - INFO - Detected double press on key A
+2025-06-19 20:57:08,730 - INFO - Detected single press on key A
+2025-06-19 20:57:19,437 - INFO - Detected single press on key A
+2025-06-19 20:57:20,422 - INFO - Detected single press on key A
+2025-06-19 20:57:34,002 - INFO - Shutting down...
+2025-06-19 21:02:33,550 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:02:33,551 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:02:33,714 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:04:13,777 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:04:13,778 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:04:13,942 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:04:55,075 - INFO - Detected single press on key A
+2025-06-19 21:05:07,214 - INFO - Detected single press on key A
+2025-06-19 21:07:04,347 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:07:04,347 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:07:04,526 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:08:12,748 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:08:12,749 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:08:12,924 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:08:43,058 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:08:43,059 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:08:43,226 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:12:13,629 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:12:13,630 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:12:13,810 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:20:31,468 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:20:31,469 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:20:31,636 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:20:56,046 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREVIOUS_TRACK
+2025-06-19 21:20:56,046 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:20:56,219 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:20:58,170 - INFO - Detected double press on key A
+2025-06-19 21:22:22,188 - INFO - Detected single press on key A
+2025-06-19 21:22:33,260 - INFO - Detected single press on key A
+2025-06-19 21:22:36,313 - INFO - Shutting down...
+2025-06-19 21:23:55,632 - INFO - Listening for key presses: a and b
+2025-06-19 21:23:55,632 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:23:55,806 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:24:12,143 - INFO - Detected double press on key A
+2025-06-19 21:24:15,393 - ERROR - Error running object detection: 'YOLODetector' object has no attribute 'visualize_detections'
+2025-06-19 21:24:56,539 - INFO - Detected double press on key A
+2025-06-19 21:24:57,199 - ERROR - Error running object detection: 'YOLODetector' object has no attribute 'visualize_detections'
+2025-06-19 21:27:06,725 - INFO - Listening for key presses: a and b
+2025-06-19 21:27:06,726 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:27:06,889 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:27:08,737 - INFO - Detected double press on key A
+2025-06-19 21:27:12,342 - ERROR - Error running object detection: 'YOLODetector' object has no attribute 'visualize_detections'
+2025-06-19 21:27:19,372 - INFO - Detected single press on key A
+2025-06-19 21:28:42,851 - INFO - Shutting down...
+2025-06-19 21:31:13,298 - INFO - Listening for key presses: a and b
+2025-06-19 21:31:13,298 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:31:13,469 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:31:32,123 - INFO - Listening for key presses: a and b
+2025-06-19 21:31:32,124 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:31:32,305 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:31:33,834 - INFO - Detected double press on key A
+2025-06-19 21:31:37,099 - ERROR - Error running object detection: 'YOLODetector' object has no attribute 'visualize_detections'
+2025-06-19 21:32:28,474 - INFO - Detected single press on key B
+2025-06-19 21:32:33,327 - INFO - Detected single press on key A
+2025-06-19 21:32:39,019 - INFO - Shutting down...
+2025-06-19 21:37:05,103 - DEBUG - Initializing InputManager...
+2025-06-19 21:37:05,103 - DEBUG - Initializing SpeechEngine...
+2025-06-19 21:37:05,347 - DEBUG - Speech processing loop started.
+2025-06-19 21:37:05,347 - DEBUG - Speech thread started successfully.
+2025-06-19 21:37:05,353 - DEBUG - Speech engine initialized.
+2025-06-19 21:37:05,353 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-19 21:37:05,353 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-19 21:37:05,353 - DEBUG - InputManager setup complete.
+2025-06-19 21:37:05,514 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:37:05,515 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A and B.'
+2025-06-19 21:37:05,515 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A and B.'
+2025-06-19 21:37:10,467 - DEBUG - Finished speaking in 4.95s: 'System ready. Listening for input on keys A and B.'
+2025-06-19 21:37:22,151 - DEBUG - Initializing InputManager...
+2025-06-19 21:37:22,152 - DEBUG - Initializing SpeechEngine...
+2025-06-19 21:37:22,392 - DEBUG - Speech processing loop started.
+2025-06-19 21:37:22,392 - DEBUG - Speech thread started successfully.
+2025-06-19 21:37:22,398 - DEBUG - Speech engine initialized.
+2025-06-19 21:37:22,398 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-19 21:37:22,399 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-19 21:37:22,399 - DEBUG - InputManager setup complete.
+2025-06-19 21:37:22,560 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:37:22,560 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A and B.'
+2025-06-19 21:37:22,560 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A and B.'
+2025-06-19 21:37:23,030 - DEBUG - Key a pressed at 1750358243.0296574
+2025-06-19 21:37:23,066 - DEBUG - Key a released at 1750358243.065184, duration 0.036s, count 1
+2025-06-19 21:37:23,567 - DEBUG - Single tap detected on key a
+2025-06-19 21:37:23,568 - INFO - Detected single press on key A
+2025-06-19 21:37:23,568 - DEBUG - Short pulse order received
+2025-06-19 21:37:23,649 - DEBUG - Key a pressed at 1750358243.6486447
+2025-06-19 21:37:23,670 - DEBUG - Queued speech text: 'Key A pressed once'
+2025-06-19 21:37:23,795 - DEBUG - Key a released at 1750358243.7952075, duration 0.147s, count 1
+2025-06-19 21:37:23,822 - DEBUG - Key a pressed at 1750358243.8213196
+2025-06-19 21:37:23,941 - DEBUG - Key a released at 1750358243.9407773, duration 0.119s, count 2
+2025-06-19 21:37:24,441 - DEBUG - Double tap detected on key a
+2025-06-19 21:37:24,443 - INFO - Detected double press on key A
+2025-06-19 21:37:24,444 - DEBUG - Double pulse order received
+2025-06-19 21:37:24,747 - DEBUG - Queued speech text: 'Running object detection'
+2025-06-19 21:37:27,394 - DEBUG - Queued speech text: 'person detected'
+2025-06-19 21:37:27,549 - DEBUG - Finished speaking in 4.99s: 'System ready. Listening for input on keys A and B.'
+2025-06-19 21:37:27,555 - DEBUG - Processing speech item: 'Key A pressed once'
+2025-06-19 21:37:29,777 - DEBUG - Finished speaking in 2.22s: 'Key A pressed once'
+2025-06-19 21:37:29,787 - DEBUG - Processing speech item: 'Running object detection'
+2025-06-19 21:37:32,276 - DEBUG - Finished speaking in 2.49s: 'Running object detection'
+2025-06-19 21:37:32,284 - DEBUG - Processing speech item: 'person detected'
+2025-06-19 21:37:34,355 - DEBUG - Finished speaking in 2.07s: 'person detected'
+2025-06-19 21:37:57,749 - INFO - Listening for key presses: a and b
+2025-06-19 21:37:57,749 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:37:57,925 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:38:01,339 - INFO - Detected double press on key A
+2025-06-19 21:38:24,795 - INFO - Shutting down...
+2025-06-19 21:42:37,847 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREV_TRACK
+2025-06-19 21:42:37,847 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:42:38,009 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:46:42,994 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREV_TRACK
+2025-06-19 21:46:42,995 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:46:43,163 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:46:46,239 - INFO - Detected double press on key A
+2025-06-19 21:46:53,341 - INFO - Detected double press on key B
+2025-06-19 21:46:56,231 - INFO - Shutting down...
+2025-06-19 21:47:40,160 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREV_TRACK
+2025-06-19 21:47:40,160 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:47:40,327 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:47:46,138 - INFO - Detected double press on key A
+2025-06-19 21:47:51,897 - INFO - Detected double press on key B
+2025-06-19 21:48:12,970 - INFO - Detected single press on key A
+2025-06-19 21:48:23,061 - INFO - Shutting down...
+2025-06-19 21:52:45,709 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREV_TRACK
+2025-06-19 21:52:45,710 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:52:45,875 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:53:03,203 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREV_TRACK
+2025-06-19 21:53:03,203 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:53:03,372 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 21:53:04,973 - INFO - Detected double press on key A
+2025-06-19 21:53:08,743 - INFO - Shutting down...
+2025-06-19 21:56:06,053 - INFO - Starting Input Manager...
+2025-06-19 21:56:06,063 - DEBUG - Initializing InputManager...
+2025-06-19 21:56:06,063 - DEBUG - Initializing SpeechEngine...
+2025-06-19 21:56:06,514 - DEBUG - Speech processing loop started.
+2025-06-19 21:56:06,514 - DEBUG - Speech thread started successfully.
+2025-06-19 21:56:06,566 - DEBUG - Speech engine initialized.
+2025-06-19 21:56:06,567 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-19 21:56:06,567 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-19 21:56:06,568 - DEBUG - KeyDetector initialized for key 'media next track'
+2025-06-19 21:56:06,569 - DEBUG - KeyDetector initialized for key 'media previous track'
+2025-06-19 21:56:06,569 - DEBUG - InputManager setup complete.
+2025-06-19 21:56:06,570 - INFO - Input Manager initialized.
+2025-06-19 21:56:06,571 - INFO - Listening for key presses: ['a', 'b', 'media_next', 'media_prev']
+2025-06-19 21:56:23,974 - INFO - Listening for key presses: KEY_MEDIA_NEXT_TRACK and KEY_MEDIA_PREV_TRACK
+2025-06-19 21:56:23,975 - INFO - Press Ctrl+C to exit.
+2025-06-19 21:56:24,142 - ERROR - Unexpected error: ("Key 'media_next' is not mapped to any known key.", ValueError("Key name 'media next' is not mapped to any known key."))
+2025-06-19 22:05:45,698 - INFO - Starting Input Manager...
+2025-06-19 22:05:45,699 - DEBUG - Initializing InputManager...
+2025-06-19 22:05:45,699 - DEBUG - Initializing SpeechEngine...
+2025-06-19 22:05:46,000 - DEBUG - Speech processing loop started.
+2025-06-19 22:05:46,000 - DEBUG - Speech thread started successfully.
+2025-06-19 22:05:46,007 - DEBUG - Speech engine initialized.
+2025-06-19 22:05:46,007 - DEBUG - KeyDetector initialized for key 'next track'
+2025-06-19 22:05:46,007 - DEBUG - KeyDetector initialized for key 'previous track'
+2025-06-19 22:05:46,008 - DEBUG - InputManager setup complete.
+2025-06-19 22:05:46,008 - INFO - Input Manager initialized.
+2025-06-19 22:05:46,009 - INFO - Listening for key presses: ['next track', 'previous track']
+2025-06-19 22:05:46,198 - INFO - Input manager started. Listening for key presses on A, B, media_next, and media_prev.
+2025-06-19 22:05:46,199 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A, B, and media buttons.'
+2025-06-19 22:05:46,199 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A, B, and media buttons.'
+2025-06-19 22:05:52,869 - DEBUG - Finished speaking in 6.67s: 'System ready. Listening for input on keys A, B, and media buttons.'
+2025-06-19 22:06:15,476 - INFO - Listening for key presses: next track and previous track
+2025-06-19 22:06:15,476 - INFO - Press Ctrl+C to exit.
+2025-06-19 22:06:15,638 - INFO - Input manager started. Listening for key presses on A, B, media_next, and media_prev.
+2025-06-19 22:06:48,126 - INFO - Listening for key presses: next track and previous track
+2025-06-19 22:06:48,126 - INFO - Press Ctrl+C to exit.
+2025-06-19 22:06:48,293 - INFO - Input manager started. Listening for key presses on A, B, media_next, and media_prev.
+2025-06-19 22:07:22,670 - INFO - Listening for key presses: next track and previous track
+2025-06-19 22:07:22,670 - INFO - Press Ctrl+C to exit.
+2025-06-19 22:07:22,840 - INFO - Input manager started. Listening for key presses on A, B, media_next, and media_prev.
+2025-06-19 22:07:56,666 - INFO - Listening for key presses: next track and previous track
+2025-06-19 22:07:56,667 - INFO - Press Ctrl+C to exit.
+2025-06-19 22:07:56,835 - INFO - Input manager started. Listening for key presses on A, B, media_next, and media_prev.
+2025-06-19 22:08:35,974 - INFO - Starting Input Manager...
+2025-06-19 22:08:35,975 - DEBUG - Initializing InputManager...
+2025-06-19 22:08:35,976 - DEBUG - Initializing SpeechEngine...
+2025-06-19 22:08:36,296 - DEBUG - Speech processing loop started.
+2025-06-19 22:08:36,296 - DEBUG - Speech thread started successfully.
+2025-06-19 22:08:36,302 - DEBUG - Speech engine initialized.
+2025-06-19 22:08:36,302 - DEBUG - KeyDetector initialized for key 'next track'
+2025-06-19 22:08:36,303 - DEBUG - KeyDetector initialized for key 'previous track'
+2025-06-19 22:08:36,303 - DEBUG - InputManager setup complete.
+2025-06-19 22:08:36,303 - INFO - Input Manager initialized.
+2025-06-19 22:08:36,303 - INFO - Listening for key presses: ['next track', 'previous track']
+2025-06-19 22:08:36,479 - INFO - Input manager started. Listening for key presses on A, B, media_next, and media_prev.
+2025-06-19 22:08:36,480 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A, B, and media buttons.'
+2025-06-19 22:08:36,480 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A, B, and media buttons.'
+2025-06-19 22:08:43,157 - DEBUG - Finished speaking in 6.68s: 'System ready. Listening for input on keys A, B, and media buttons.'
+2025-06-19 22:10:36,549 - INFO - Starting Input Manager...
+2025-06-19 22:10:36,549 - DEBUG - Initializing InputManager...
+2025-06-19 22:10:36,549 - DEBUG - Initializing SpeechEngine...
+2025-06-19 22:10:36,879 - DEBUG - Speech processing loop started.
+2025-06-19 22:10:36,879 - DEBUG - Speech thread started successfully.
+2025-06-19 22:10:36,885 - DEBUG - Speech engine initialized.
+2025-06-19 22:10:36,885 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-19 22:10:36,885 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-19 22:10:36,886 - DEBUG - InputManager setup complete.
+2025-06-19 22:10:36,886 - INFO - Input Manager initialized.
+2025-06-19 22:10:36,886 - INFO - Listening for key presses: a and b
+2025-06-19 22:10:37,094 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 22:10:37,094 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A and B.'
+2025-06-19 22:10:37,094 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A and B.'
+2025-06-19 22:10:41,611 - DEBUG - Key a pressed at 1750360241.6109855
+2025-06-19 22:10:41,718 - DEBUG - Key a released at 1750360241.7174451, duration 0.106s, count 1
+2025-06-19 22:10:42,102 - DEBUG - Finished speaking in 5.01s: 'System ready. Listening for input on keys A and B.'
+2025-06-19 22:10:42,218 - DEBUG - Single tap detected on key a
+2025-06-19 22:10:42,219 - INFO - Detected single press on key A
+2025-06-19 22:10:42,219 - DEBUG - Short pulse order received
+2025-06-19 22:10:42,321 - DEBUG - Queued speech text: 'Key A pressed once'
+2025-06-19 22:10:42,321 - DEBUG - Processing speech item: 'Key A pressed once'
+2025-06-19 22:10:43,834 - DEBUG - Key b pressed at 1750360243.833489
+2025-06-19 22:10:43,909 - DEBUG - Key b released at 1750360243.9078243, duration 0.074s, count 1
+2025-06-19 22:10:44,408 - DEBUG - Single tap detected on key b
+2025-06-19 22:10:44,409 - INFO - Detected single press on key B
+2025-06-19 22:10:44,410 - DEBUG - Short pulse order received
+2025-06-19 22:10:44,519 - DEBUG - Queued speech text: 'Key B pressed once'
+2025-06-19 22:10:44,575 - DEBUG - Finished speaking in 2.25s: 'Key A pressed once'
+2025-06-19 22:10:44,580 - DEBUG - Processing speech item: 'Key B pressed once'
+2025-06-19 22:10:46,855 - DEBUG - Finished speaking in 2.27s: 'Key B pressed once'
+2025-06-19 22:10:48,464 - DEBUG - Key b pressed at 1750360248.4630945
+2025-06-19 22:10:48,541 - DEBUG - Key b released at 1750360248.540468, duration 0.077s, count 1
+2025-06-19 22:10:48,625 - DEBUG - Key b pressed at 1750360248.6240678
+2025-06-19 22:10:48,690 - DEBUG - Key b released at 1750360248.6889403, duration 0.065s, count 2
+2025-06-19 22:10:49,189 - DEBUG - Double tap detected on key b
+2025-06-19 22:10:49,191 - INFO - Detected double press on key B
+2025-06-19 22:10:49,191 - DEBUG - Double pulse order received
+2025-06-19 22:10:49,494 - DEBUG - Queued speech text: 'Key B pressed twice'
+2025-06-19 22:10:49,495 - DEBUG - Processing speech item: 'Key B pressed twice'
+2025-06-19 22:10:51,305 - DEBUG - Key a pressed at 1750360251.3044765
+2025-06-19 22:10:51,397 - DEBUG - Key a released at 1750360251.3965528, duration 0.092s, count 1
+2025-06-19 22:10:51,489 - DEBUG - Key a pressed at 1750360251.4883177
+2025-06-19 22:10:51,586 - DEBUG - Key a released at 1750360251.5854006, duration 0.097s, count 2
+2025-06-19 22:10:51,822 - DEBUG - Finished speaking in 2.33s: 'Key B pressed twice'
+2025-06-19 22:10:52,087 - DEBUG - Double tap detected on key a
+2025-06-19 22:10:52,088 - INFO - Detected double press on key A
+2025-06-19 22:10:52,089 - DEBUG - Double pulse order received
+2025-06-19 22:10:52,391 - DEBUG - Queued speech text: 'Key A pressed twice'
+2025-06-19 22:10:52,391 - DEBUG - Processing speech item: 'Key A pressed twice'
+2025-06-19 22:10:54,669 - DEBUG - Finished speaking in 2.28s: 'Key A pressed twice'
+2025-06-19 22:12:45,467 - INFO - Listening for key presses: a and b
+2025-06-19 22:12:45,468 - INFO - Press Ctrl+C to exit.
+2025-06-19 22:12:45,643 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 22:12:48,003 - INFO - Detected double press on key A
+2025-06-19 22:13:48,405 - DEBUG - Initializing InputManager...
+2025-06-19 22:13:48,411 - DEBUG - Initializing SpeechEngine...
+2025-06-19 22:13:48,690 - DEBUG - Speech processing loop started.
+2025-06-19 22:13:48,690 - DEBUG - Speech thread started successfully.
+2025-06-19 22:13:48,697 - DEBUG - Speech engine initialized.
+2025-06-19 22:13:48,698 - DEBUG - KeyDetector initialized for key 'a'
+2025-06-19 22:13:48,698 - DEBUG - KeyDetector initialized for key 'b'
+2025-06-19 22:13:48,698 - DEBUG - InputManager setup complete.
+2025-06-19 22:13:48,891 - INFO - Input manager started. Listening for key presses on A and B.
+2025-06-19 22:13:48,892 - DEBUG - Queued speech text: 'System ready. Listening for input on keys A and B.'
+2025-06-19 22:13:48,892 - DEBUG - Processing speech item: 'System ready. Listening for input on keys A and B.'
+2025-06-19 22:13:51,410 - DEBUG - Key a pressed at 1750360431.4095914
+2025-06-19 22:13:51,506 - DEBUG - Key a released at 1750360431.5051575, duration 0.096s, count 1
+2025-06-19 22:13:52,006 - DEBUG - Single tap detected on key a
+2025-06-19 22:13:52,007 - INFO - Detected single press on key A
+2025-06-19 22:13:52,008 - DEBUG - Short pulse order received
+2025-06-19 22:13:52,109 - DEBUG - Queued speech text: 'Key A pressed once'
+2025-06-19 22:13:53,864 - DEBUG - Finished speaking in 4.97s: 'System ready. Listening for input on keys A and B.'
+2025-06-19 22:13:53,872 - DEBUG - Processing speech item: 'Key A pressed once'
+2025-06-19 22:13:56,070 - DEBUG - Key b pressed at 1750360436.0698252
+2025-06-19 22:13:56,094 - DEBUG - Finished speaking in 2.22s: 'Key A pressed once'
+2025-06-19 22:13:56,177 - DEBUG - Key b released at 1750360436.1766164, duration 0.107s, count 1
+2025-06-19 22:13:56,676 - DEBUG - Single tap detected on key b
+2025-06-19 22:13:56,678 - INFO - Detected single press on key B
+2025-06-19 22:13:56,678 - DEBUG - Short pulse order received
+2025-06-19 22:13:56,780 - DEBUG - Queued speech text: 'Key B pressed once'
+2025-06-19 22:13:56,780 - DEBUG - Processing speech item: 'Key B pressed once'
+2025-06-19 22:13:58,595 - DEBUG - Key a pressed at 1750360438.59416
+2025-06-19 22:13:58,686 - DEBUG - Key a released at 1750360438.6850827, duration 0.091s, count 1
+2025-06-19 22:13:58,764 - DEBUG - Key a pressed at 1750360438.7629633
+2025-06-19 22:13:58,861 - DEBUG - Key a released at 1750360438.859961, duration 0.097s, count 2
+2025-06-19 22:13:59,060 - DEBUG - Finished speaking in 2.28s: 'Key B pressed once'
+2025-06-19 22:13:59,361 - DEBUG - Double tap detected on key a
+2025-06-19 22:13:59,362 - INFO - Detected double press on key A
+2025-06-19 22:13:59,362 - DEBUG - Double pulse order received
+2025-06-19 22:13:59,665 - DEBUG - Queued speech text: 'Running object detection'
+2025-06-19 22:13:59,665 - DEBUG - Processing speech item: 'Running object detection'
+2025-06-19 22:14:02,149 - DEBUG - Finished speaking in 2.48s: 'Running object detection'
+2025-06-19 22:14:02,561 - DEBUG - Queued speech text: 'person detected'
+2025-06-19 22:14:02,561 - DEBUG - Processing speech item: 'person detected'
+2025-06-19 22:14:02,561 - DEBUG - Queued speech text: 'pottedplant detected'
+2025-06-19 22:14:04,661 - DEBUG - Finished speaking in 2.10s: 'person detected'
+2025-06-19 22:14:04,668 - DEBUG - Processing speech item: 'pottedplant detected'
+2025-06-19 22:14:06,997 - DEBUG - Finished speaking in 2.33s: 'pottedplant detected'
+2025-06-19 23:52:57,494 - INFO - Listening for key presses: media next track and media previous track
+2025-06-19 23:52:57,494 - INFO - Press Ctrl+C to exit.
+2025-06-19 23:52:57,657 - ERROR - Unexpected error: ("Key 'media next track' is not mapped to any known key.", ValueError("Key name 'media next track' is not mapped to any known key."))
+2025-06-19 23:58:54,072 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-19 23:58:54,073 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-19 23:58:54,258 - INFO - Listening for key presses: next and previous
+2025-06-19 23:58:54,258 - INFO - Press Ctrl+C to exit.
+2025-06-19 23:58:54,416 - INFO - Input manager started with scan code hook.
+2025-06-19 23:59:47,409 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-19 23:59:47,410 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-19 23:59:47,599 - INFO - Listening for key presses: next and previous
+2025-06-19 23:59:47,599 - INFO - Press Ctrl+C to exit.
+2025-06-19 23:59:47,757 - INFO - Input manager started with scan code hook.
+2025-06-20 00:00:30,586 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:00:30,586 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:00:30,771 - INFO - Listening for key presses: next and previous
+2025-06-20 00:00:30,771 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:00:30,935 - INFO - Input manager started with scan code hook.
+2025-06-20 00:05:15,701 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:05:15,702 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:05:15,900 - INFO - Listening for key presses: next, previous, and play
+2025-06-20 00:05:15,900 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:05:16,074 - INFO - Input manager started with scan code hook.
+2025-06-20 00:05:58,397 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:05:58,397 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:05:58,585 - INFO - Listening for key presses: next, previous, and play
+2025-06-20 00:05:58,586 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:05:58,739 - INFO - Input manager started with scan code hook.
+2025-06-20 00:07:56,720 - INFO - Listening for key presses: next, previous, and play
+2025-06-20 00:07:56,721 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:08:06,140 - INFO - Listening for key presses: next, previous, and play
+2025-06-20 00:08:06,141 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:10:13,610 - INFO - Listening for key presses: next, previous, and play
+2025-06-20 00:10:13,610 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:13:50,691 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:13:50,691 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:13:50,691 - ERROR - Unexpected error: InputManager.start() got an unexpected keyword argument 'scan_codes'
+2025-06-20 00:15:31,013 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:15:31,014 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:15:31,205 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:15:31,205 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:15:31,352 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:15:37,266 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:15:41,559 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:15:52,774 - INFO - Detected single press on key with scan code -177
+2025-06-20 00:16:01,788 - INFO - Detected double press on key with scan code -176
+2025-06-20 00:16:14,473 - INFO - Detected double press on key with scan code -179
+2025-06-20 00:16:25,606 - INFO - Detected double press on key with scan code -177
+2025-06-20 00:16:37,831 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:16:47,836 - INFO - Detected triple press on key with scan code -179
+2025-06-20 00:16:48,407 - ERROR - OCR error: Error occurred during OCR processing: C:/Program Files/Tesseract-OCR/Tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+2025-06-20 00:17:21,296 - INFO - Shutting down...
+2025-06-20 00:21:50,490 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:21:50,490 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:21:50,677 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:21:50,677 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:21:50,837 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:21:56,671 - INFO - Detected double press on key with scan code -176
+2025-06-20 00:22:03,583 - INFO - Detected double press on key with scan code -177
+2025-06-20 00:22:11,461 - INFO - Detected triple press on key with scan code -179
+2025-06-20 00:22:12,019 - ERROR - OCR error: Error occurred during OCR processing: C:/Program Files/Tesseract-OCR/Tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+2025-06-20 00:22:23,796 - INFO - Shutting down...
+2025-06-20 00:25:55,876 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:25:55,877 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:25:56,097 - ERROR - Unexpected error: list index out of range
+2025-06-20 00:27:20,607 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:27:20,608 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:27:20,799 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:27:20,800 - INFO - Press Ctrl+C to exit.
+2025-06-20 00:27:20,964 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:27:26,345 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:27:30,868 - INFO - Detected single press on key with scan code -177
+2025-06-20 00:27:32,680 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:30:29,976 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:30:29,977 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:30:30,311 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:30:33,489 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:30:41,650 - INFO - Detected single press on key with scan code -177
+2025-06-20 00:30:41,775 - ERROR - OCR error: Error occurred during OCR processing: C:/Program Files/Tesseract-OCR/Tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+2025-06-20 00:30:48,759 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:31:48,598 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 00:31:48,598 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 00:31:48,918 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 00:31:50,596 - INFO - Detected single press on key with scan code -177
+2025-06-20 00:31:51,033 - ERROR - OCR error: Error occurred during OCR processing: C:/Program Files/Tesseract-OCR/Tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+2025-06-20 00:31:58,275 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:32:16,391 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:32:23,330 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:32:36,392 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:33:03,643 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:33:10,164 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:33:17,648 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:33:25,488 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:33:30,505 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:33:39,803 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:34:03,447 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:34:13,161 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:34:18,797 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:34:25,083 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:34:37,425 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:34:43,703 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:34:50,620 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:34:57,696 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:35:04,217 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:35:20,123 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:35:24,033 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:35:31,693 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:35:44,108 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:35:52,470 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:36:12,587 - INFO - Detected single press on key with scan code -176
+2025-06-20 00:36:54,340 - INFO - Detected single press on key with scan code -179
+2025-06-20 00:36:58,597 - INFO - Detected single press on key with scan code -176
+2025-06-20 01:52:52,738 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 01:52:52,739 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 01:52:53,287 - INFO - Listening for scan codes: -176, -177
+2025-06-20 01:53:01,242 - INFO - Detected single press on key with scan code -176
+2025-06-20 01:53:05,287 - ERROR - Object detection error: Could not find PyAudio; check installation
+2025-06-20 01:53:27,385 - INFO - Detected single press on key with scan code -177
+2025-06-20 01:53:27,770 - ERROR - Currency detection error: Could not find PyAudio; check installation
+2025-06-20 01:58:17,054 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\start\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-20 01:58:17,054 - INFO - Using writeable comtypes cache directory: 'C:\Users\start\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'
+2025-06-20 01:58:17,369 - INFO - Listening for scan codes: -176, -177, -179
+2025-06-20 01:58:20,236 - INFO - Detected single press on key with scan code -176
+2025-06-20 01:58:35,777 - INFO - Detected single press on key with scan code -176
+2025-06-20 01:58:42,368 - INFO - Detected single press on key with scan code -176
+2025-06-20 01:58:56,070 - INFO - Detected single press on key with scan code -176
+2025-06-20 01:59:12,891 - INFO - Detected single press on key with scan code -179
